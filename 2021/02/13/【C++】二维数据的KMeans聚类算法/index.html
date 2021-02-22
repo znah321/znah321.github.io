@@ -11,7 +11,7 @@
   <meta name="description" content="前言据说下个学期的通软课要用，先写个简单的练练手（ 只能处理二维的数据，而且貌似运行速度略慢。用了一个vector，但是写完后感觉用不到，直接用结构体数组就行。然后写了一个函数生成一个数据集，但是随机性太大了，基本用不了。 数据集的格式如下（坐标之间用空格隔开）：  输出结果（会保存到cluster_result.txt中）：  如何在指定范围内生成随机浮点数123456789101112#inc">
 <meta property="og:type" content="article">
 <meta property="og:title" content="【C++】二维数据的KMeans聚类算法">
-<meta property="og:url" content="http://example.com/2021/02/13/%E3%80%90C-%E3%80%91%E4%BA%8C%E7%BB%B4%E6%95%B0%E6%8D%AE%E7%9A%84KMeans%E8%81%9A%E7%B1%BB%E7%AE%97%E6%B3%95/index.html">
+<meta property="og:url" content="http://example.com/2021/02/13/%E3%80%90C++%E3%80%91%E4%BA%8C%E7%BB%B4%E6%95%B0%E6%8D%AE%E7%9A%84KMeans%E8%81%9A%E7%B1%BB%E7%AE%97%E6%B3%95/index.html">
 <meta property="og:site_name" content="某懒狗的博客">
 <meta property="og:description" content="前言据说下个学期的通软课要用，先写个简单的练练手（ 只能处理二维的数据，而且貌似运行速度略慢。用了一个vector，但是写完后感觉用不到，直接用结构体数组就行。然后写了一个函数生成一个数据集，但是随机性太大了，基本用不了。 数据集的格式如下（坐标之间用空格隔开）：  输出结果（会保存到cluster_result.txt中）：  如何在指定范围内生成随机浮点数123456789101112#inc">
 <meta property="og:locale">
@@ -158,7 +158,7 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-【C-】二维数据的KMeans聚类算法" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-【C++】二维数据的KMeans聚类算法" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
@@ -170,7 +170,7 @@
   
 
         
-        <a href="/2021/02/13/%E3%80%90C-%E3%80%91%E4%BA%8C%E7%BB%B4%E6%95%B0%E6%8D%AE%E7%9A%84KMeans%E8%81%9A%E7%B1%BB%E7%AE%97%E6%B3%95/" class="archive-article-date">
+        <a href="/2021/02/13/%E3%80%90C++%E3%80%91%E4%BA%8C%E7%BB%B4%E6%95%B0%E6%8D%AE%E7%9A%84KMeans%E8%81%9A%E7%B1%BB%E7%AE%97%E6%B3%95/" class="archive-article-date">
   	<time datetime="2021-02-13T09:04:44.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-02-13</time>
 </a>
         
@@ -288,7 +288,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://example.com/2021/02/13/%E3%80%90C-%E3%80%91%E4%BA%8C%E7%BB%B4%E6%95%B0%E6%8D%AE%E7%9A%84KMeans%E8%81%9A%E7%B1%BB%E7%AE%97%E6%B3%95/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://example.com/2021/02/13/%E3%80%90C++%E3%80%91%E4%BA%8C%E7%BB%B4%E6%95%B0%E6%8D%AE%E7%9A%84KMeans%E8%81%9A%E7%B1%BB%E7%AE%97%E6%B3%95/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -341,7 +341,7 @@
   
   <div class="duoshuo">
 	<!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="【C-】二维数据的KMeans聚类算法" data-title="【C++】二维数据的KMeans聚类算法" data-url="http://example.com/2021/02/13/%E3%80%90C-%E3%80%91%E4%BA%8C%E7%BB%B4%E6%95%B0%E6%8D%AE%E7%9A%84KMeans%E8%81%9A%E7%B1%BB%E7%AE%97%E6%B3%95/"></div>
+	<div class="ds-thread" data-thread-key="【C++】二维数据的KMeans聚类算法" data-title="【C++】二维数据的KMeans聚类算法" data-url="http://example.com/2021/02/13/%E3%80%90C++%E3%80%91%E4%BA%8C%E7%BB%B4%E6%95%B0%E6%8D%AE%E7%9A%84KMeans%E8%81%9A%E7%B1%BB%E7%AE%97%E6%B3%95/"></div>
 	<!-- 多说评论框 end -->
 	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 	<script type="text/javascript">
@@ -463,11 +463,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">C++</a>
+                <a href="javascript:void(0)" class="js-tag color5">生活记录</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">生活记录</a>
+                <a href="javascript:void(0)" class="js-tag color4">C++</a>
               </li>
             
             <div class="clearfix"></div>
