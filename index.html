@@ -152,6 +152,97 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-尝试不学编译原理自制一个解释器1——Gowmat的语法规则" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2021/03/07/%E5%B0%9D%E8%AF%95%E4%B8%8D%E5%AD%A6%E7%BC%96%E8%AF%91%E5%8E%9F%E7%90%86%E8%87%AA%E5%88%B6%E4%B8%80%E4%B8%AA%E8%A7%A3%E9%87%8A%E5%99%A81%E2%80%94%E2%80%94Gowmat%E7%9A%84%E8%AF%AD%E6%B3%95%E8%A7%84%E5%88%99/">尝试不学编译原理自制一个解释器1——Gowmat的文法规则</a>
+    </h1>
+  
+
+        
+        <a href="/2021/03/07/%E5%B0%9D%E8%AF%95%E4%B8%8D%E5%AD%A6%E7%BC%96%E8%AF%91%E5%8E%9F%E7%90%86%E8%87%AA%E5%88%B6%E4%B8%80%E4%B8%AA%E8%A7%A3%E9%87%8A%E5%99%A81%E2%80%94%E2%80%94Gowmat%E7%9A%84%E8%AF%AD%E6%B3%95%E8%A7%84%E5%88%99/" class="archive-article-date">
+  	<time datetime="2021-03-07T13:53:04.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-03-07</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="制作动机"><a href="#制作动机" class="headerlink" title="制作动机"></a>制作动机</h3><p>上个学期有门信息论的课，布置的作业题里经常要算一个概率空间的信息熵，其实公式很简单，但作为懒狗本狗，我选择用matlab算。然而手机版的matlab用不了，在应用商店里面搜的计算器也满足不了我的需求，于是打算自己整一个。</p>
+<p>我的想法是把Gowmat当做0.00001个matlab，只要能够进行一些简单的矩阵运算就可以了，所以技术力会比较低（毕竟自己太菜了）。</p>
+<h3 id="软件功能"><a href="#软件功能" class="headerlink" title="软件功能"></a>软件功能</h3><h4 id="一、面板模式"><a href="#一、面板模式" class="headerlink" title="一、面板模式"></a>一、面板模式</h4><p>这是最简单的模式，提供一个文本输入框来输入矩阵，下面再放一些按钮代表各个功能（行列式、求逆、特征值等），然后再留一个文本框展示计算结果。只支持一个矩阵（暂时是这样想的，反正要限制储存的个数）。</p>
+<h4 id="二、源代码模式"><a href="#二、源代码模式" class="headerlink" title="二、源代码模式"></a>二、源代码模式</h4><p>分成三个部分：代码编辑区、命令行、工作区（展示目前有哪些变量），参考matlab。这一部分自由度比较大，但是我估计手机屏幕会不太够用。</p>
+<h3 id="文法规则"><a href="#文法规则" class="headerlink" title="文法规则"></a>文法规则</h3><p>同样参考matlab，不过我去掉了结构体，类和所有的app。</p>
+<p>不支持多返回值，因为现在不会弄（</p>
+<h3 id="一点碎碎念"><a href="#一点碎碎念" class="headerlink" title="一点碎碎念"></a>一点碎碎念</h3><p>虽然这篇文章的日期标的是3月7号，但实际写完的时候是3月20号，果然一开学又变成懒狗本狗了，半个多月没写博客。。。不过可喜可贺的是，Gowmat的开发进度已经达到了30%！目前已经实现了单词分割和一些数学运算的函数以及屏幕输出函数<code>print()</code>，矩阵计算库基本上是写完了，可能日后会补充一些新的函数。</p>
+<p>我对这个项目的最终要求是实现逻辑语句、循环、自定义函数、绘图以及debug，当然目前为止以上所提到的功能均未能实现，而且我也没有思路（</p>
+<p>不过与寒假的时候相比还是好很多了，当时甚至完全不知道从哪里开始做起。本来想着实现一个板块的功能就写一篇博客记录一下自己的心路历程，结果啥都莫得。后面可能会写吧。。。</p>
+<p>顺便附上项目地址：<a target="_blank" rel="noopener" href="https://github.com/znah321/GowMat">https://github.com/znah321/GowMat</a></p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Gowmat</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">Java</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">编译原理</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2021/03/07/%E5%B0%9D%E8%AF%95%E4%B8%8D%E5%AD%A6%E7%BC%96%E8%AF%91%E5%8E%9F%E7%90%86%E8%87%AA%E5%88%B6%E4%B8%80%E4%B8%AA%E8%A7%A3%E9%87%8A%E5%99%A81%E2%80%94%E2%80%94Gowmat%E7%9A%84%E8%AF%AD%E6%B3%95%E8%A7%84%E5%88%99/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-【Arduino】超声波测距-蜂鸣器实验" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -925,6 +1016,18 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">Arduino</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Gowmat</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">Java</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">编译原理</a>
               </li>
              
               <li class="article-tag-list-item">
