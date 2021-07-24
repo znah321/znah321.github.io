@@ -152,6 +152,229 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-深度神经网络基础" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2021/07/24/%E6%B7%B1%E5%BA%A6%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E5%9F%BA%E7%A1%80/">深度神经网络基础</a>
+    </h1>
+  
+
+        
+        <a href="/2021/07/24/%E6%B7%B1%E5%BA%A6%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E5%9F%BA%E7%A1%80/" class="archive-article-date">
+  	<time datetime="2021-07-24T05:21:11.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-07-24</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="深度神经网络基础"><a href="#深度神经网络基础" class="headerlink" title="深度神经网络基础"></a>深度神经网络基础</h2><p>主要是机器学习中的一些基础知识和概念。</p>
+<h3 id="1-1-监督学习和无监督学习"><a href="#1-1-监督学习和无监督学习" class="headerlink" title="1.1 监督学习和无监督学习"></a>1.1 监督学习和无监督学习</h3><p>监督学习：提供一组输入数据和<strong>其对应的标签数据</strong>，然后搭建一个模型，让模型在通过训练后准确地找到输入数据和标签数据之间的最优映射关系。在输入新的数据后，模型能够通过之前学到的最优映射关系，快速地预测出这组新数据的标签。</p>
+<ul>
+<li>实际应用：回归问题（<strong>连续</strong>的线性映射关系）、分类问题（<strong>离散</strong>的映射关系）等。</li>
+</ul>
+<p>无监督学习：提供一组<strong>没有任何标签</strong>的输入数据，将其在我们搭建好的模型中进行训练，将其在我们搭建好的模型中进行训练，对整个训练过程不做任何干涉，最后得到一个能够<strong>发现数据之间隐藏特征</strong>的映射模型，使用这个模型能够实现对新数据的分类。无监督学习<strong>主要依靠模型自己寻找数据中隐藏的规律和特征</strong>。</p>
+<ul>
+<li>实际应用：聚类问题等。</li>
+</ul>
+<p><img src="https://goweild.oss-cn-beijing.aliyuncs.com/20210721135934.png" alt="监督学习与无监督学习"></p>
+<p>除了这两种方法，还有半监督学习和弱监督学习等更具有创新性的方法出现，像半监督学习就是结合了监督学习和无监督学习各自的优点。</p>
+<h3 id="1-2-欠拟合和过拟合"><a href="#1-2-欠拟合和过拟合" class="headerlink" title="1.2 欠拟合和过拟合"></a>1.2 欠拟合和过拟合</h3><p>欠拟合：模型只能捕获数据的一部分特征，不能很好地对新数据进行准确预测，也就是拟合效果很差。</p>
+<p><img src="https://goweild.oss-cn-beijing.aliyuncs.com/20210721135233.png" alt="欠拟合"></p>
+<p>在解决欠拟合问题时，主要从以下三方面着手：</p>
+<ul>
+<li>增加特征项：加入更多的和原数据有重要相关性的特征来训练搭建的模型。</li>
+<li>构造复杂的多项式。</li>
+<li>减少正则化参数：正则化参数出现的目的是防止过拟合，减少这一参数可以消除欠拟合。</li>
+</ul>
+<p>过拟合：过度捕获了原数据的特征，而且<strong>受噪声数据的影响非常严重</strong>。</p>
+<p><img src="https://goweild.oss-cn-beijing.aliyuncs.com/20210721140323.png" alt="过拟合"></p>
+<p>在解决过拟合问题时，主要从以下三方面入手：</p>
+<ul>
+<li>增大训练的数据量。</li>
+<li>采用正则化方法：一般指的是在目标函数之后加上范数，在实践中最常用到的正则化方法有L0正则、L1正则和L2正则。</li>
+<li>Dropout方法。</li>
+</ul>
+<h3 id="1-3-后向传播"><a href="#1-3-后向传播" class="headerlink" title="1.3 后向传播"></a>1.3 后向传播</h3><p>后向传播主要用于对搭建的模型中的参数进行微调，其基本思想是：通过链式法则求出所有参数对损失函数$L$的梯度。</p>
+<p>如图所示的简易神经网络模型：</p>
+<p><img src="https://goweild.oss-cn-beijing.aliyuncs.com/20171201215804947.png"></p>
+<p>输入值$x_1$、$x_2$和真实值$t$都是给定的，误差的大小只与神经网络的参数：权重$w_1,w_2,\cdots,w_n$，神经元的偏置$b_1,b_2,\cdots,b_n$有关（图里只考虑权重），损失函数就可以写成$L(\vec{\bold w})$的形式。我们要做的就是优化权重$\vec{\bold w}$，使误差尽量的小，此时神经网络转换成了一个优化问题。</p>
+<p>在优化问题中，最常用的就是梯度下降法，这也是后向传播用到的方法，需要我们求梯度，梯度下降的更新算法为：<br>$$<br>{w}’ = w-\eta \frac{\partial L}{\partial w}<br>$$<br>其中，$\eta$为参数，也就是<strong>学习率</strong>。</p>
+<p>利用<strong>计算图</strong>的概念（参考《深度学习与计算机视觉 算法原理、框架应用与代码实现》、<a target="_blank" rel="noopener" href="https://blog.csdn.net/u014688145/article/details/78691262/">深度学习系列（2）：前向传播和后向传播算法</a>），可以求得$L$对$w_1$、$w_5$的偏导数：<br>$$<br>\frac{\partial L}{\partial w_1} = \frac{\partial L}{\partial y} \frac{\partial y}{\partial z_3} \frac{\partial z_3}{\partial h_1} \frac{\partial h_1}{\partial z_1} \frac{\partial z_1}{\partial w_1} \<br>\frac{\partial L}{\partial w_5} = \frac{\partial L}{\partial y} \frac{\partial y}{\partial z_3} \frac{\partial z_3}{\partial h_1} \frac{\partial h_1}{\partial z_1} \frac{\partial z_1}{\partial w_5} \<br>$$<br>可以看到，求偏导的顺序是从$L$开始的，这也是为什么这种算法叫做“后向传播”的原因（从输出节点开始计算）。使用梯度下降算法，也会存在一些问题，如梯度消失、梯度爆炸等。</p>
+<h3 id="1-4-损失与优化"><a href="#1-4-损失与优化" class="headerlink" title="1.4 损失与优化"></a>1.4 损失与优化</h3><p><strong>损失函数</strong></p>
+<p>常用的三种损失函数：</p>
+<p>（1）均方误差函数MSE：<br>$$<br>MSE = \frac{1}{N}\sum_{i=1}^{N}{(t_i - y_i)^2}<br>$$<br>其中，$y_i$为第$i$个样本的预测值，$t_i$为第$i$个样本的真实值，下同。</p>
+<p>（2）均方根误差函数RMSE：<br>$$<br>RMSE =\sqrt{\frac{1}{N}\sum_{i=1}^{N}{(t_i - y_i)^2}}<br>$$<br>（3）平均绝对误差函数MAE：<br>$$<br>MAE = \frac{1}{N}\sum_{i=1}^{N}{|t_i - y_i|}<br>$$</p>
+<p><strong>优化函数</strong></p>
+<p>在实践操作中，最常用到的是一阶优化函数，典型的一阶优化函数报告GD（即梯度下降，后向传播用的就是这个）、SGD、Momentum等。</p>
+<p>（1）随机梯度下降（Stochastic Gradient Descent，SGD）：每次从训练样本中随机抽取一个样本来计算损失函数。</p>
+<p>（2）小批量样本（mini-batch），随机选取一定数量的训练样本，<strong>每个批次的样本量选择也成了重要的超参数</strong>。</p>
+<p>（3）Adam（Adaptive Moment Estimation）：自适应时刻估计方法，在模型训练优化的过程中让每个参数获得自适应的学习率。</p>
+<h3 id="1-5-激活函数"><a href="#1-5-激活函数" class="headerlink" title="1.5 激活函数"></a>1.5 激活函数</h3><p>在机器学习领域，激活函数通常代表<strong>非线性变换</strong>，它能够处理更复杂的问题。</p>
+<h4 id="Sigmoid函数"><a href="#Sigmoid函数" class="headerlink" title="Sigmoid函数"></a>Sigmoid函数</h4><p>$$<br>f(x)=\frac{1}{1+e^{-x}}<br>$$</p>
+<p>函数图像为：</p>
+<p><img src="https://goweild.oss-cn-beijing.aliyuncs.com/sigmoid.jpg" alt="Sigmoid函数"></p>
+<p>输入Sigmoid函数的数据，经过激活后，输出数据的区间为$[0,1]$。它与生物神经网络的工作机理非常相似，但缺点也很明显，即会导致<strong>模型的梯度消失</strong>，因为Sigmoid函数的导函数$\frac{e^{-x}}{(1+e^{-x})^2}$的取值区间为$[0,0.25]$。</p>
+<p>同时，由于Sigmoid函数的输出值恒大于0（即非0均值输出），这会使得模型训练的收敛速度变慢。反向传播中，权重由下面的式子确定：<br>$$<br>w_i \leftarrow w_i -\eta \frac{\partial L}{\partial w_i}=w_i -\eta \frac{\partial L}{\partial f} \frac{\partial f}{\partial z} \frac{\partial z}{\partial w_i} = w_i -\eta x_i \frac{\partial L}{\partial f} \frac{\partial f}{\partial z}<br>$$<br>其中，$\eta$和$ \frac{\partial L}{\partial f} \frac{\partial f}{\partial z} $对于当前所有待更新的$w_i$一样，相当于常数。因此，参数更新方向由$x_i$的正负决定。</p>
+<p>如果上一级神经元的激活函数为Sigmoid函数，则这一级的$x_i$全为正数。同时，考虑到损失函数$L$对神经元输出$f$的导数正负是不确定的，<strong>因此$ w_i -\eta x_i \frac{\partial L}{\partial f} \frac{\partial f}{\partial z}$要么同时为正，要么同时为负，即所有权重的更新方向都是一样的</strong>，会导致如下的锯齿状更新：</p>
+<p><img src="https://goweild.oss-cn-beijing.aliyuncs.com/1127755-20170527150630388-149535295.png"></p>
+<p>另外，Sigmoid函数需要进行指数运算，这对于计算机来说是比较慢的。</p>
+<h4 id="tanh函数"><a href="#tanh函数" class="headerlink" title="tanh函数"></a>tanh函数</h4><p>$$<br>f(x)=\frac{e^x-e^{-x}}{e^x+e^{-x}}<br>$$</p>
+<p>函数图像为：</p>
+<p><img src="https://goweild.oss-cn-beijing.aliyuncs.com/sigmoid_diff.jpg" alt="tanh函数图像"></p>
+<p>由图可知，tanh函数的输出结果是<strong>零中心数据</strong>（zero-centered），解决了激活函数在模型优化过程中收敛速度变慢的问题。而tanh函数的导数取值区间为$[0,1]$，仍然不够大，在后向传播的过程中还是会出现梯度消失的情况。</p>
+<h4 id="ReLU函数"><a href="#ReLU函数" class="headerlink" title="ReLU函数"></a>ReLU函数</h4><p>$$<br>f(x)=\max(0,x)<br>$$</p>
+<p>函数图像为：</p>
+<p><img src="https://goweild.oss-cn-beijing.aliyuncs.com/ReLU.jpg" alt="ReLU函数图像"></p>
+<p>ReLU函数的收敛速度非常快，计算效率远远高于Sigmoid和tanh。不过也存在一些问题：不是零中心数据，这可能导致某些神经元永远不会被激活，并且这些神经元相对应的参数不能被更新。</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">机器学习</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2021/07/24/%E6%B7%B1%E5%BA%A6%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E5%9F%BA%E7%A1%80/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-【Gowmat开发记录】尝试不学编译原理自制一个解释器1——Gowmat的语法规则" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2021/03/07/%E3%80%90Gowmat%E5%BC%80%E5%8F%91%E8%AE%B0%E5%BD%95%E3%80%91%E5%B0%9D%E8%AF%95%E4%B8%8D%E5%AD%A6%E7%BC%96%E8%AF%91%E5%8E%9F%E7%90%86%E8%87%AA%E5%88%B6%E4%B8%80%E4%B8%AA%E8%A7%A3%E9%87%8A%E5%99%A81%E2%80%94%E2%80%94Gowmat%E7%9A%84%E8%AF%AD%E6%B3%95%E8%A7%84%E5%88%99/">尝试不学编译原理自制一个解释器1——Gowmat的文法规则</a>
+    </h1>
+  
+
+        
+        <a href="/2021/03/07/%E3%80%90Gowmat%E5%BC%80%E5%8F%91%E8%AE%B0%E5%BD%95%E3%80%91%E5%B0%9D%E8%AF%95%E4%B8%8D%E5%AD%A6%E7%BC%96%E8%AF%91%E5%8E%9F%E7%90%86%E8%87%AA%E5%88%B6%E4%B8%80%E4%B8%AA%E8%A7%A3%E9%87%8A%E5%99%A81%E2%80%94%E2%80%94Gowmat%E7%9A%84%E8%AF%AD%E6%B3%95%E8%A7%84%E5%88%99/" class="archive-article-date">
+  	<time datetime="2021-03-07T13:53:04.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-03-07</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="制作动机"><a href="#制作动机" class="headerlink" title="制作动机"></a>制作动机</h3><p>上个学期有门信息论的课，布置的作业题里经常要算一个概率空间的信息熵，其实公式很简单，但作为懒狗本狗，我选择用matlab算。然而手机版的matlab用不了，在应用商店里面搜的计算器也满足不了我的需求，于是打算自己整一个。</p>
+<p>我的想法是把Gowmat当做0.00001个matlab，只要能够进行一些简单的矩阵运算就可以了，所以技术力会比较低（毕竟自己太菜了）。</p>
+<h3 id="软件功能"><a href="#软件功能" class="headerlink" title="软件功能"></a>软件功能</h3><h4 id="一、面板模式"><a href="#一、面板模式" class="headerlink" title="一、面板模式"></a>一、面板模式</h4><p>这是最简单的模式，提供一个文本输入框来输入矩阵，下面再放一些按钮代表各个功能（行列式、求逆、特征值等），然后再留一个文本框展示计算结果。只支持一个矩阵（暂时是这样想的，反正要限制储存的个数）。</p>
+<h4 id="二、源代码模式"><a href="#二、源代码模式" class="headerlink" title="二、源代码模式"></a>二、源代码模式</h4><p>分成三个部分：代码编辑区、命令行、工作区（展示目前有哪些变量），参考matlab。这一部分自由度比较大，但是我估计手机屏幕会不太够用。</p>
+<h3 id="文法规则"><a href="#文法规则" class="headerlink" title="文法规则"></a>文法规则</h3><p>同样参考matlab，不过我去掉了结构体，类和所有的app。</p>
+<p>不支持多返回值，因为现在不会弄（</p>
+<h3 id="一点碎碎念"><a href="#一点碎碎念" class="headerlink" title="一点碎碎念"></a>一点碎碎念</h3><p>虽然这篇文章的日期标的是3月7号，但实际写完的时候是3月20号，果然一开学又变成懒狗本狗了，半个多月没写博客。。。不过可喜可贺的是，Gowmat的开发进度已经达到了30%！目前已经实现了单词分割和一些数学运算的函数以及屏幕输出函数<code>print()</code>，矩阵计算库基本上是写完了，可能日后会补充一些新的函数。</p>
+<p>我对这个项目的最终要求是实现逻辑语句、循环、自定义函数、绘图以及debug，当然目前为止以上所提到的功能均未能实现，而且我也没有思路（</p>
+<p>不过与寒假的时候相比还是好很多了，当时甚至完全不知道从哪里开始做起。本来想着实现一个板块的功能就写一篇博客记录一下自己的心路历程，结果啥都莫得。后面可能会写吧。。。</p>
+<p>顺便附上项目地址：<a target="_blank" rel="noopener" href="https://github.com/znah321/GowMat">https://github.com/znah321/GowMat</a></p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Gowmat</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">Java</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">编译原理</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2021/03/07/%E3%80%90Gowmat%E5%BC%80%E5%8F%91%E8%AE%B0%E5%BD%95%E3%80%91%E5%B0%9D%E8%AF%95%E4%B8%8D%E5%AD%A6%E7%BC%96%E8%AF%91%E5%8E%9F%E7%90%86%E8%87%AA%E5%88%B6%E4%B8%80%E4%B8%AA%E8%A7%A3%E9%87%8A%E5%99%A81%E2%80%94%E2%80%94Gowmat%E7%9A%84%E8%AF%AD%E6%B3%95%E8%A7%84%E5%88%99/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-尝试不学编译原理自制一个解释器1——Gowmat的语法规则" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -851,77 +1074,10 @@
 
 
   
-    <article id="post-hello-world" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2021/01/28/hello-world/">Hello World</a>
-    </h1>
-  
-
-        
-        <a href="/2021/01/28/hello-world/" class="archive-article-date">
-  	<time datetime="2021-01-28T05:37:32.983Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-01-28</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2021/01/28/hello-world/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
+    <nav id="page-nav">
+      <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">Next &amp;raquo;</a>
+    </nav>
   
 
 
@@ -1019,6 +1175,10 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">C++</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">Gowmat</a>
               </li>
              
@@ -1031,7 +1191,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">C++</a>
+                <a href="javascript:void(0)" class="js-tag color5">机器学习</a>
               </li>
              
               <li class="article-tag-list-item">
