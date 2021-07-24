@@ -8,12 +8,12 @@
   <link rel="dns-prefetch" href="http://example.com">
   <title>【Arduino】简单的流水灯实验 | 某懒狗的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="去年寒假买的arduino，上学期有单片机的课，本来是打算拿着预习一下，然而买回来之后，试了一下点亮led就没摸过了，正好今年寒假有时间，也学了一点单片机的知识，好好学一下arduino。 硬件连接部分由于并没有下仿真软件，所以选择拍了实物图，可能看不太清楚。。。 走线方式是参考的《Arduino程序设计基础》，这种方式还是比我一开始想的要好得多   代码12345678910111213void">
+  <meta name="description" content="去年寒假买的arduino，上学期有单片机的课，本来是打算拿着预习一下，然而买回来之后，试了一下点亮led就没摸过了，正好今年寒假有时间，也学了一点单片机的知识，好好学一下arduino。 硬件连接部分由于并没有下仿真软件，所以选择拍了实物图，可能看不太清楚。。。 走线方式是参考的《Arduino程序设计基础》，这种方式还是比我一开始想的要好得多  代码12345678910111213void">
 <meta property="og:type" content="article">
 <meta property="og:title" content="【Arduino】简单的流水灯实验">
 <meta property="og:url" content="http://example.com/2021/02/17/%E3%80%90Arduino%E3%80%91%E7%AE%80%E5%8D%95%E7%9A%84%E6%B5%81%E6%B0%B4%E7%81%AF%E5%AE%9E%E9%AA%8C/index.html">
 <meta property="og:site_name" content="某懒狗的博客">
-<meta property="og:description" content="去年寒假买的arduino，上学期有单片机的课，本来是打算拿着预习一下，然而买回来之后，试了一下点亮led就没摸过了，正好今年寒假有时间，也学了一点单片机的知识，好好学一下arduino。 硬件连接部分由于并没有下仿真软件，所以选择拍了实物图，可能看不太清楚。。。 走线方式是参考的《Arduino程序设计基础》，这种方式还是比我一开始想的要好得多   代码12345678910111213void">
+<meta property="og:description" content="去年寒假买的arduino，上学期有单片机的课，本来是打算拿着预习一下，然而买回来之后，试了一下点亮led就没摸过了，正好今年寒假有时间，也学了一点单片机的知识，好好学一下arduino。 硬件连接部分由于并没有下仿真软件，所以选择拍了实物图，可能看不太清楚。。。 走线方式是参考的《Arduino程序设计基础》，这种方式还是比我一开始想的要好得多  代码12345678910111213void">
 <meta property="og:locale">
 <meta property="og:image" content="https://goweild.oss-cn-beijing.aliyuncs.com/IMG_20210217_194923.jpg">
 <meta property="og:image" content="https://goweild.oss-cn-beijing.aliyuncs.com/QQ%E6%88%AA%E5%9B%BE20210218153033.png">
@@ -181,8 +181,7 @@
         <p>去年寒假买的arduino，上学期有单片机的课，本来是打算拿着预习一下，然而买回来之后，试了一下点亮led就没摸过了，正好今年寒假有时间，也学了一点单片机的知识，好好学一下arduino。</p>
 <h3 id="硬件连接部分"><a href="#硬件连接部分" class="headerlink" title="硬件连接部分"></a>硬件连接部分</h3><p>由于并没有下仿真软件，所以选择拍了实物图，可能看不太清楚。。。</p>
 <p>走线方式是参考的《Arduino程序设计基础》，这种方式还是比我一开始想的要好得多</p>
-<img src="https://goweild.oss-cn-beijing.aliyuncs.com/IMG_20210217_194923.jpg" style="zoom:20%;" />
-
+<p><img src="https://goweild.oss-cn-beijing.aliyuncs.com/IMG_20210217_194923.jpg" style="zoom:20%;" /></p>
 <h3 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h3><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">setup</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">3</span>; i &lt; <span class="number">9</span>; i++)</span><br><span class="line">        pinMode(i,OUTPUT);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">loop</span><span class="params">()</span> </span>&#123;</span><br><span class="line">	<span class="keyword">int</span> i;</span><br><span class="line">  	<span class="keyword">for</span>(i = <span class="number">3</span>; i &lt; <span class="number">9</span> ; i++) &#123;</span><br><span class="line">    	digitalWrite(i,HIGH);</span><br><span class="line">    	delay(<span class="number">100</span>);</span><br><span class="line">    	digitalWrite(i,LOW);</span><br><span class="line">  	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <h3 id="关于按钮"><a href="#关于按钮" class="headerlink" title="关于按钮"></a>关于按钮</h3><p><img src="https://goweild.oss-cn-beijing.aliyuncs.com/QQ%E6%88%AA%E5%9B%BE20210218153033.png" alt="按钮原理图"></p>
 <p>没按下之前，AD、BC是相通的；按下之后，A、B、C、D均是相通的。</p>
@@ -467,11 +466,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">机器学习</a>
+                <a href="javascript:void(0)" class="js-tag color5">生活记录</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">生活记录</a>
+                <a href="javascript:void(0)" class="js-tag color5">机器学习</a>
               </li>
             
             <div class="clearfix"></div>
@@ -628,5 +627,21 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
 
 </div>
   </div>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
 </body>
 </html>

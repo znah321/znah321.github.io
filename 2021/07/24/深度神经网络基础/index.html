@@ -24,7 +24,7 @@
 <meta property="og:image" content="https://goweild.oss-cn-beijing.aliyuncs.com/sigmoid_diff.jpg">
 <meta property="og:image" content="https://goweild.oss-cn-beijing.aliyuncs.com/ReLU.jpg">
 <meta property="article:published_time" content="2021-07-24T05:21:11.000Z">
-<meta property="article:modified_time" content="2021-07-24T05:21:59.465Z">
+<meta property="article:modified_time" content="2021-07-24T05:34:06.595Z">
 <meta property="article:author" content="Wei Xin">
 <meta property="article:tag" content="机器学习">
 <meta name="twitter:card" content="summary">
@@ -213,34 +213,46 @@
 </ul>
 <h3 id="1-3-后向传播"><a href="#1-3-后向传播" class="headerlink" title="1.3 后向传播"></a>1.3 后向传播</h3><p>后向传播主要用于对搭建的模型中的参数进行微调，其基本思想是：通过链式法则求出所有参数对损失函数$L$的梯度。</p>
 <p>如图所示的简易神经网络模型：</p>
-<p><img src="https://goweild.oss-cn-beijing.aliyuncs.com/20171201215804947.png"></p>
+<p><img src="https://goweild.oss-cn-beijing.aliyuncs.com/20171201215804947.png" alt=""></p>
 <p>输入值$x_1$、$x_2$和真实值$t$都是给定的，误差的大小只与神经网络的参数：权重$w_1,w_2,\cdots,w_n$，神经元的偏置$b_1,b_2,\cdots,b_n$有关（图里只考虑权重），损失函数就可以写成$L(\vec{\bold w})$的形式。我们要做的就是优化权重$\vec{\bold w}$，使误差尽量的小，此时神经网络转换成了一个优化问题。</p>
-<p>在优化问题中，最常用的就是梯度下降法，这也是后向传播用到的方法，需要我们求梯度，梯度下降的更新算法为：<br>$$<br>{w}’ = w-\eta \frac{\partial L}{\partial w}<br>$$<br>其中，$\eta$为参数，也就是<strong>学习率</strong>。</p>
-<p>利用<strong>计算图</strong>的概念（参考《深度学习与计算机视觉 算法原理、框架应用与代码实现》、<a target="_blank" rel="noopener" href="https://blog.csdn.net/u014688145/article/details/78691262/">深度学习系列（2）：前向传播和后向传播算法</a>），可以求得$L$对$w_1$、$w_5$的偏导数：<br>$$<br>\frac{\partial L}{\partial w_1} = \frac{\partial L}{\partial y} \frac{\partial y}{\partial z_3} \frac{\partial z_3}{\partial h_1} \frac{\partial h_1}{\partial z_1} \frac{\partial z_1}{\partial w_1} \<br>\frac{\partial L}{\partial w_5} = \frac{\partial L}{\partial y} \frac{\partial y}{\partial z_3} \frac{\partial z_3}{\partial h_1} \frac{\partial h_1}{\partial z_1} \frac{\partial z_1}{\partial w_5} \<br>$$<br>可以看到，求偏导的顺序是从$L$开始的，这也是为什么这种算法叫做“后向传播”的原因（从输出节点开始计算）。使用梯度下降算法，也会存在一些问题，如梯度消失、梯度爆炸等。</p>
+<p>在优化问题中，最常用的就是梯度下降法，这也是后向传播用到的方法，需要我们求梯度，梯度下降的更新算法为：</p>
+<script type="math/tex; mode=display">
+{w}' = w-\eta \frac{\partial L}{\partial w}</script><p>其中，$\eta$为参数，也就是<strong>学习率</strong>。</p>
+<p>利用<strong>计算图</strong>的概念（参考《深度学习与计算机视觉 算法原理、框架应用与代码实现》、<a target="_blank" rel="noopener" href="https://blog.csdn.net/u014688145/article/details/78691262/">深度学习系列（2）：前向传播和后向传播算法</a>），可以求得$L$对$w_1$、$w_5$的偏导数：</p>
+<script type="math/tex; mode=display">
+\frac{\partial L}{\partial w_1} = \frac{\partial L}{\partial y} \frac{\partial y}{\partial z_3} \frac{\partial z_3}{\partial h_1} \frac{\partial h_1}{\partial z_1} \frac{\partial z_1}{\partial w_1} \\
+\frac{\partial L}{\partial w_5} = \frac{\partial L}{\partial y} \frac{\partial y}{\partial z_3} \frac{\partial z_3}{\partial h_1} \frac{\partial h_1}{\partial z_1} \frac{\partial z_1}{\partial w_5} \\</script><p>可以看到，求偏导的顺序是从$L$开始的，这也是为什么这种算法叫做“后向传播”的原因（从输出节点开始计算）。使用梯度下降算法，也会存在一些问题，如梯度消失、梯度爆炸等。</p>
 <h3 id="1-4-损失与优化"><a href="#1-4-损失与优化" class="headerlink" title="1.4 损失与优化"></a>1.4 损失与优化</h3><p><strong>损失函数</strong></p>
 <p>常用的三种损失函数：</p>
-<p>（1）均方误差函数MSE：<br>$$<br>MSE = \frac{1}{N}\sum_{i=1}^{N}{(t_i - y_i)^2}<br>$$<br>其中，$y_i$为第$i$个样本的预测值，$t_i$为第$i$个样本的真实值，下同。</p>
-<p>（2）均方根误差函数RMSE：<br>$$<br>RMSE =\sqrt{\frac{1}{N}\sum_{i=1}^{N}{(t_i - y_i)^2}}<br>$$<br>（3）平均绝对误差函数MAE：<br>$$<br>MAE = \frac{1}{N}\sum_{i=1}^{N}{|t_i - y_i|}<br>$$</p>
-<p><strong>优化函数</strong></p>
+<p>（1）均方误差函数MSE：</p>
+<script type="math/tex; mode=display">
+MSE = \frac{1}{N}\sum_{i=1}^{N}{(t_i - y_i)^2}</script><p>其中，$y_i$为第$i$个样本的预测值，$t_i$为第$i$个样本的真实值，下同。</p>
+<p>（2）均方根误差函数RMSE：</p>
+<script type="math/tex; mode=display">
+RMSE =\sqrt{\frac{1}{N}\sum_{i=1}^{N}{(t_i - y_i)^2}}</script><p>（3）平均绝对误差函数MAE：</p>
+<script type="math/tex; mode=display">
+MAE = \frac{1}{N}\sum_{i=1}^{N}{|t_i - y_i|}</script><p><strong>优化函数</strong></p>
 <p>在实践操作中，最常用到的是一阶优化函数，典型的一阶优化函数报告GD（即梯度下降，后向传播用的就是这个）、SGD、Momentum等。</p>
 <p>（1）随机梯度下降（Stochastic Gradient Descent，SGD）：每次从训练样本中随机抽取一个样本来计算损失函数。</p>
 <p>（2）小批量样本（mini-batch），随机选取一定数量的训练样本，<strong>每个批次的样本量选择也成了重要的超参数</strong>。</p>
 <p>（3）Adam（Adaptive Moment Estimation）：自适应时刻估计方法，在模型训练优化的过程中让每个参数获得自适应的学习率。</p>
 <h3 id="1-5-激活函数"><a href="#1-5-激活函数" class="headerlink" title="1.5 激活函数"></a>1.5 激活函数</h3><p>在机器学习领域，激活函数通常代表<strong>非线性变换</strong>，它能够处理更复杂的问题。</p>
-<h4 id="Sigmoid函数"><a href="#Sigmoid函数" class="headerlink" title="Sigmoid函数"></a>Sigmoid函数</h4><p>$$<br>f(x)=\frac{1}{1+e^{-x}}<br>$$</p>
-<p>函数图像为：</p>
+<h4 id="Sigmoid函数"><a href="#Sigmoid函数" class="headerlink" title="Sigmoid函数"></a>Sigmoid函数</h4><script type="math/tex; mode=display">
+f(x)=\frac{1}{1+e^{-x}}</script><p>函数图像为：</p>
 <p><img src="https://goweild.oss-cn-beijing.aliyuncs.com/sigmoid.jpg" alt="Sigmoid函数"></p>
 <p>输入Sigmoid函数的数据，经过激活后，输出数据的区间为$[0,1]$。它与生物神经网络的工作机理非常相似，但缺点也很明显，即会导致<strong>模型的梯度消失</strong>，因为Sigmoid函数的导函数$\frac{e^{-x}}{(1+e^{-x})^2}$的取值区间为$[0,0.25]$。</p>
-<p>同时，由于Sigmoid函数的输出值恒大于0（即非0均值输出），这会使得模型训练的收敛速度变慢。反向传播中，权重由下面的式子确定：<br>$$<br>w_i \leftarrow w_i -\eta \frac{\partial L}{\partial w_i}=w_i -\eta \frac{\partial L}{\partial f} \frac{\partial f}{\partial z} \frac{\partial z}{\partial w_i} = w_i -\eta x_i \frac{\partial L}{\partial f} \frac{\partial f}{\partial z}<br>$$<br>其中，$\eta$和$ \frac{\partial L}{\partial f} \frac{\partial f}{\partial z} $对于当前所有待更新的$w_i$一样，相当于常数。因此，参数更新方向由$x_i$的正负决定。</p>
+<p>同时，由于Sigmoid函数的输出值恒大于0（即非0均值输出），这会使得模型训练的收敛速度变慢。反向传播中，权重由下面的式子确定：</p>
+<script type="math/tex; mode=display">
+w_i \leftarrow w_i -\eta \frac{\partial L}{\partial w_i}=w_i -\eta \frac{\partial L}{\partial f} \frac{\partial f}{\partial z} \frac{\partial z}{\partial w_i} = w_i -\eta x_i \frac{\partial L}{\partial f} \frac{\partial f}{\partial z}</script><p>其中，$\eta$和$ \frac{\partial L}{\partial f} \frac{\partial f}{\partial z} $对于当前所有待更新的$w_i$一样，相当于常数。因此，参数更新方向由$x_i$的正负决定。</p>
 <p>如果上一级神经元的激活函数为Sigmoid函数，则这一级的$x_i$全为正数。同时，考虑到损失函数$L$对神经元输出$f$的导数正负是不确定的，<strong>因此$ w_i -\eta x_i \frac{\partial L}{\partial f} \frac{\partial f}{\partial z}$要么同时为正，要么同时为负，即所有权重的更新方向都是一样的</strong>，会导致如下的锯齿状更新：</p>
-<p><img src="https://goweild.oss-cn-beijing.aliyuncs.com/1127755-20170527150630388-149535295.png"></p>
+<p><img src="https://goweild.oss-cn-beijing.aliyuncs.com/1127755-20170527150630388-149535295.png" alt=""></p>
 <p>另外，Sigmoid函数需要进行指数运算，这对于计算机来说是比较慢的。</p>
-<h4 id="tanh函数"><a href="#tanh函数" class="headerlink" title="tanh函数"></a>tanh函数</h4><p>$$<br>f(x)=\frac{e^x-e^{-x}}{e^x+e^{-x}}<br>$$</p>
-<p>函数图像为：</p>
+<h4 id="tanh函数"><a href="#tanh函数" class="headerlink" title="tanh函数"></a>tanh函数</h4><script type="math/tex; mode=display">
+f(x)=\frac{e^x-e^{-x}}{e^x+e^{-x}}</script><p>函数图像为：</p>
 <p><img src="https://goweild.oss-cn-beijing.aliyuncs.com/sigmoid_diff.jpg" alt="tanh函数图像"></p>
 <p>由图可知，tanh函数的输出结果是<strong>零中心数据</strong>（zero-centered），解决了激活函数在模型优化过程中收敛速度变慢的问题。而tanh函数的导数取值区间为$[0,1]$，仍然不够大，在后向传播的过程中还是会出现梯度消失的情况。</p>
-<h4 id="ReLU函数"><a href="#ReLU函数" class="headerlink" title="ReLU函数"></a>ReLU函数</h4><p>$$<br>f(x)=\max(0,x)<br>$$</p>
-<p>函数图像为：</p>
+<h4 id="ReLU函数"><a href="#ReLU函数" class="headerlink" title="ReLU函数"></a>ReLU函数</h4><script type="math/tex; mode=display">
+f(x)=\max(0,x)</script><p>函数图像为：</p>
 <p><img src="https://goweild.oss-cn-beijing.aliyuncs.com/ReLU.jpg" alt="ReLU函数图像"></p>
 <p>ReLU函数的收敛速度非常快，计算效率远远高于Sigmoid和tanh。不过也存在一些问题：不是零中心数据，这可能导致某些神经元永远不会被激活，并且这些神经元相对应的参数不能被更新。</p>
 
@@ -515,11 +527,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">机器学习</a>
+                <a href="javascript:void(0)" class="js-tag color5">生活记录</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">生活记录</a>
+                <a href="javascript:void(0)" class="js-tag color5">机器学习</a>
               </li>
             
             <div class="clearfix"></div>
@@ -676,5 +688,21 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
 
 </div>
   </div>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
 </body>
 </html>

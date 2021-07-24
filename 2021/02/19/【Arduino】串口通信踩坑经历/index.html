@@ -181,9 +181,9 @@
         <p>在看《Arduino程序设计基础》的时候，写了一个小程序测试一下串口通信，目的是返回输入的字符串</p>
 <figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">setup</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    Serial.begin(<span class="number">9600</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">int</span> max_size = <span class="number">10</span>;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">loop</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="keyword">char</span> <span class="built_in">string</span>[max_size];</span><br><span class="line">    <span class="built_in">string</span>[<span class="number">0</span>] = <span class="string">&#x27;\0&#x27;</span>;</span><br><span class="line">    <span class="keyword">int</span> i = <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">while</span>(Serial.available() &gt; <span class="number">0</span>) &#123;</span><br><span class="line">        <span class="built_in">string</span>[i] = Serial.read();</span><br><span class="line">        Serial.print(<span class="string">&quot;Read in: &quot;</span>);</span><br><span class="line">        Serial.println(<span class="built_in">string</span>[i]);</span><br><span class="line">        i++;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span> (<span class="built_in">string</span>[<span class="number">0</span>] != <span class="string">&#x27;\0&#x27;</span>) &#123;</span><br><span class="line">        Serial.print(<span class="string">&quot;PC: &quot;</span>);</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> j = <span class="number">0</span>; j &lt; i; j++)</span><br><span class="line">            Serial.print(<span class="built_in">string</span>[j]);</span><br><span class="line">        Serial.println(<span class="string">&quot;\nPC: Done!\n&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>理论上的效果应该是这样的：</p>
-<p><img src="https://goweild.oss-cn-beijing.aliyuncs.com/20210220134905.png"></p>
+<p><img src="https://goweild.oss-cn-beijing.aliyuncs.com/20210220134905.png" alt=""></p>
 <p>然而结果是：</p>
-<p><img src="https://goweild.oss-cn-beijing.aliyuncs.com/20210220135010.png"></p>
+<p><img src="https://goweild.oss-cn-beijing.aliyuncs.com/20210220135010.png" alt=""></p>
 <p>查了一波资料后，发现是USART的问题，也就是Arduino实现串口的部件。</p>
 <p>在USART内部，发送速度是远大于接收速度的。可能刚读取完第一个字符到缓冲区，<code>Serial.available() &gt; 0</code>判断为true，进入循环内，</p>
 <p><code>Serial.read()</code>把这个字符赋给<code>string</code>，而此时下一个字符还没读到缓冲区，此时缓冲区里面什么东西也没有，于是就退出了循环，执行后面的程序。因此，需要延时一小段时间：</p>
@@ -470,11 +470,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">机器学习</a>
+                <a href="javascript:void(0)" class="js-tag color5">生活记录</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">生活记录</a>
+                <a href="javascript:void(0)" class="js-tag color5">机器学习</a>
               </li>
             
             <div class="clearfix"></div>
@@ -631,5 +631,21 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
 
 </div>
   </div>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
 </body>
 </html>
