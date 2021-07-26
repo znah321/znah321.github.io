@@ -152,6 +152,112 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-卷积神经网络基础" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2021/07/26/%E5%8D%B7%E7%A7%AF%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E5%9F%BA%E7%A1%80/">卷积神经网络基础</a>
+    </h1>
+  
+
+        
+        <a href="/2021/07/26/%E5%8D%B7%E7%A7%AF%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E5%9F%BA%E7%A1%80/" class="archive-article-date">
+  	<time datetime="2021-07-26T15:44:22.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-07-26</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="卷积神经网络基础"><a href="#卷积神经网络基础" class="headerlink" title="卷积神经网络基础"></a>卷积神经网络基础</h2><p>卷积神经网络是受到了动物视觉系统的启发。在视觉神经系统中，神经冲动经过视觉通路（视觉神经→视交叉→视束→外侧膝状体→视放射）传递进大脑的初级视觉皮层。从视觉皮层开始，对图像信息的处理也是分层的，分别是从V1到V5，每一层处理一部分特定的信息。</p>
+<p>1958年起的一项对猫视觉皮层的研究，在V1皮层里发现了两种细胞：简单细胞（Simple Cells）和复杂细胞（Complex Cells），它们都<strong>只对特定方向的条形图样刺激有反应</strong>。这两种细胞的主要区别是：简单细胞对应的视网膜上的光感受细胞所在的区域很小，而复杂细胞则对应更大的区域，这个区域被称为感受野（Receptive Field）。</p>
+<p>在卷积神经网络的基本结构中，使用<strong>卷积层</strong>来模拟对特定图案的响应，而<strong>池化层</strong>用于模拟感受野，其结构如下图所示：</p>
+<p><img src="https://goweild.oss-cn-beijing.aliyuncs.com/20210724204120.png" alt="卷积层+池化层的基本结构"></p>
+<p>输入首先经过卷积层得到响应，然后经过激活层做非线性变换。在这里，卷积本身也可以看做是一种线性变换，再考虑到偏置项，这种仿射变换+非线性变换的操作其实就是一般神经网络中的基本操作的一种特殊情况，主要是池化层特殊一点。</p>
+<h3 id="1-1-卷积层"><a href="#1-1-卷积层" class="headerlink" title="1.1 卷积层"></a>1.1 卷积层</h3><p>卷积层的主要作用是对输入的数据进行特征提取。如果认为卷积核代表某种特征的话，卷积的结果就是输入对这种特征的响应。</p>
+<p><img src="https://goweild.oss-cn-beijing.aliyuncs.com/20210724204816.png" alt="图像对于卷积核的响应"></p>
+<p>上面一排照片的画面中是5架战斗机，把其中一架战斗机的图像截取出来，减去均值作为卷积核，然后和原图做卷积，得到的结果如下面一排图像所示。可以很明显的看到，每架战机所在的位置得到了一个很大的响应。由此可得，<strong>卷积核可以找到图像中和自身纹理最相似的部分，且相似度越高，得到的响应值越大</strong>。</p>
+<h3 id="1-2-卷积的计算过程"><a href="#1-2-卷积的计算过程" class="headerlink" title="1.2 卷积的计算过程"></a>1.2 卷积的计算过程</h3><p><img src="https://goweild.oss-cn-beijing.aliyuncs.com/20210724205734.png" alt=""></p>
+<p>对应位置相乘，然后求和，即为卷积结果：</p>
+<script type="math/tex; mode=display">
+0\times4 + 0\times0+0\times0+0\times0+1\times0+1\times0+0\times0+1\times0+2\times(-4)=-8</script><p>输出的图像也叫做<strong>特征响应图（feature map）</strong>。</p>
+<p>可以看到，在输入图像的最外层多了一圈全为0的像素，这是一种用于提升卷积效果的边界像素填充方式。在卷积之前，有两种填充方式：Same和Valid。Valid方式是不填充，直接进行卷积；Same方式就是在输入图像的最外层加上指定层数的0像素边界，其目的是<strong>让输入图像的全部像素都能被滑动窗口捕捉</strong>。</p>
+<p>经过一轮卷积后，输出图像的宽度、高度满足下面的公式：</p>
+<script type="math/tex; mode=display">
+W_{output}=\frac{W_{input}-W_{filter}+2P}{S}+1 \\
+H_{output}=\frac{H_{input}-H_{filter}+2P}{S}+1</script><p>其中，$S$代表卷积核的步长，$P$代表图像边缘增加的边界像素层数。</p>
+<p>如果是单色彩通道图像，到这里就已经结束了。但实际中一般都是三色彩通道图像，可以<strong>将三通道的卷积看做三个独立的单通道卷积过程，然后将卷积结果相加，就得到了最后的输出结果</strong>。</p>
+<p>对于一个一般的卷积层，考虑输入为$x$，其中每个通道为$x_i$；输出为$y$，其中每个通道为$y_j$，从$x$到多通道特征响应图$y$的公式如下：</p>
+<script type="math/tex; mode=display">
+y_j = g(\sum_i{x_i * w_{ij}})</script><p>其中，$w_{ij}$代表第$j$个特征响应图对应的卷积层中，与第$i$和输入通道进行卷积的卷积核（<strong>卷积核可能有多个，卷积层的输出特征图通道数等于卷积层的卷积核个数</strong>），$g$是激活函数。</p>
+<blockquote>
+<p><a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_39504171/article/details/104648113">机器学习28:多卷积核处理多通道特征图机制</a></p>
+</blockquote>
+<h3 id="1-3-激活函数"><a href="#1-3-激活函数" class="headerlink" title="1.3 激活函数"></a>1.3 激活函数</h3><p>卷积层的激活函数和全连接层的差不多，就是给卷积结果做一个非线性变换，常用的是ReLU函数，只取响应大于0的部分，保留相关程度大的信息。</p>
+<h3 id="1-4-池化层（Pooling）"><a href="#1-4-池化层（Pooling）" class="headerlink" title="1.4 池化层（Pooling）"></a>1.4 池化层（Pooling）</h3><p>池化代表一种对统计信息的提取。在卷积神经网络中，池化一般指的是对特征响应图上的一个给定区域求出一个能够代表这个区域特点的值，深度学习中常见的两种池化是最大值池化（max-pooling）和平均值池化（average-pooling）。</p>
+<p>在池化层中，也需要定义一个类似卷积层中卷积核的滑动窗口，但是<strong>这个滑动窗口仅用于提取特征图中的重要特征，本身并没有参数</strong>。</p>
+<h4 id="最大值池化"><a href="#最大值池化" class="headerlink" title="最大值池化"></a>最大值池化</h4><p>通过滑动窗口选出特征图中的数据，然后将其中的最大值作为最后的输出结果。</p>
+<h4 id="平均值池化"><a href="#平均值池化" class="headerlink" title="平均值池化"></a>平均值池化</h4><p>通过滑动窗口选出特征图中的数据，然后求和、取均值，作为最后的输出结果。</p>
+<p>经过一轮池化操作后，输出的特征图的宽度和高度为</p>
+<script type="math/tex; mode=display">
+W_{output}=\frac{W_{input}-W_{filter}}{S}+1 \\
+H_{output}=\frac{H_{input}-H_{filter}}{S}+1</script><p>其中，$S$表示滑动窗口的步长，<strong>输入的特征图的深度和滑动窗口的深度保持一致</strong>。</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">机器学习</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2021/07/26/%E5%8D%B7%E7%A7%AF%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E5%9F%BA%E7%A1%80/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-深度神经网络基础" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -978,80 +1084,6 @@ f(x)=\max(0,x)</script><p>函数图像为：</p>
       
         <p class="article-more-link">
           <a class="article-more-a" href="/2021/02/01/%E3%80%90C++%E3%80%91%E7%AE%80%E5%8D%95%E9%80%9A%E8%AE%AF%E5%BD%95%E7%AE%A1%E7%90%86%E8%BD%AF%E4%BB%B6%E7%9A%84%E5%AE%9E%E7%8E%B0/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-第一篇博客" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2021/01/28/%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/">第一篇博客</a>
-    </h1>
-  
-
-        
-        <a href="/2021/01/28/%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/" class="archive-article-date">
-  	<time datetime="2021-01-28T07:47:49.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-01-28</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>之前一直想着搞一个个人博客，最开始是想用wordpress，然而作为一个菜逼根本不会，弄了一天后放弃。。。<br><br><br>这两天看了稚晖巨佬的视频，感觉真的牛逼，人与人之间的差距比人与猪的差距还大。翻了一下他的个人站之后，又点燃了我心中搞一个个人博客的欲望，遂搜教程，耗时3个多小时后完工。<br><br><br>不得不说，域名解析完，填上自己的域名打开那一瞬间，还是很开心的。<br><br><br>以后就在这里写东西了，啥都写。一方面是对自己平时学的东西的一些总结，另一方面也算是记录生活，毕竟我的表达能力是真的很差。。<br><br><br><br>最开始想在CSDN上写来着，但由于自己是在是太懒了，写了两三篇之后就没动过了。。。希望在这里能坚持下去⑧<br><br><br><br>现在才刚刚起步，目录、图床什么的都还没弄，还得等域名备案，慢慢来吧！</p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">生活记录</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2021/01/28/%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/">展开全文 >></a>
         </p>
       
 

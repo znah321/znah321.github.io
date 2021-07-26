@@ -6,15 +6,24 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://example.com">
-  <title>Archives: 2021/7 | 某懒狗的博客</title>
+  <title>卷积神经网络基础 | 某懒狗的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="某懒狗的博客">
-<meta property="og:url" content="http://example.com/archives/2021/07/index.html">
+  <meta name="description" content="卷积神经网络基础卷积神经网络是受到了动物视觉系统的启发。在视觉神经系统中，神经冲动经过视觉通路（视觉神经→视交叉→视束→外侧膝状体→视放射）传递进大脑的初级视觉皮层。从视觉皮层开始，对图像信息的处理也是分层的，分别是从V1到V5，每一层处理一部分特定的信息。 1958年起的一项对猫视觉皮层的研究，在V1皮层里发现了两种细胞：简单细胞（Simple Cells）和复杂细胞（Complex Cells">
+<meta property="og:type" content="article">
+<meta property="og:title" content="卷积神经网络基础">
+<meta property="og:url" content="http://example.com/2021/07/26/%E5%8D%B7%E7%A7%AF%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E5%9F%BA%E7%A1%80/index.html">
 <meta property="og:site_name" content="某懒狗的博客">
+<meta property="og:description" content="卷积神经网络基础卷积神经网络是受到了动物视觉系统的启发。在视觉神经系统中，神经冲动经过视觉通路（视觉神经→视交叉→视束→外侧膝状体→视放射）传递进大脑的初级视觉皮层。从视觉皮层开始，对图像信息的处理也是分层的，分别是从V1到V5，每一层处理一部分特定的信息。 1958年起的一项对猫视觉皮层的研究，在V1皮层里发现了两种细胞：简单细胞（Simple Cells）和复杂细胞（Complex Cells">
 <meta property="og:locale">
+<meta property="og:image" content="https://goweild.oss-cn-beijing.aliyuncs.com/20210724204120.png">
+<meta property="og:image" content="https://goweild.oss-cn-beijing.aliyuncs.com/20210724204816.png">
+<meta property="og:image" content="https://goweild.oss-cn-beijing.aliyuncs.com/20210724205734.png">
+<meta property="article:published_time" content="2021-07-26T15:44:22.000Z">
+<meta property="article:modified_time" content="2021-07-26T15:44:46.698Z">
 <meta property="article:author" content="Wei Xin">
+<meta property="article:tag" content="机器学习">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://goweild.oss-cn-beijing.aliyuncs.com/20210724204120.png">
   
     <link rel="alternative" href="/atom.xml" title="某懒狗的博客" type="application/atom+xml">
   
@@ -150,36 +159,88 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
+            <article id="post-卷积神经网络基础" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
   
+    <h1 class="article-title" itemprop="name">
+      卷积神经网络基础
+    </h1>
   
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2021" class="archive-year">2021</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2021/07/26/%E5%8D%B7%E7%A7%AF%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E5%9F%BA%E7%A1%80/" class="archive-article-date">
+
+        
+        <a href="/2021/07/26/%E5%8D%B7%E7%A7%AF%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E5%9F%BA%E7%A1%80/" class="archive-article-date">
   	<time datetime="2021-07-26T15:44:22.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-07-26</time>
 </a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2021/07/26/%E5%8D%B7%E7%A7%AF%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E5%9F%BA%E7%A1%80/">卷积神经网络基础</a>
-    </h1>
-  
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="卷积神经网络基础"><a href="#卷积神经网络基础" class="headerlink" title="卷积神经网络基础"></a>卷积神经网络基础</h2><p>卷积神经网络是受到了动物视觉系统的启发。在视觉神经系统中，神经冲动经过视觉通路（视觉神经→视交叉→视束→外侧膝状体→视放射）传递进大脑的初级视觉皮层。从视觉皮层开始，对图像信息的处理也是分层的，分别是从V1到V5，每一层处理一部分特定的信息。</p>
+<p>1958年起的一项对猫视觉皮层的研究，在V1皮层里发现了两种细胞：简单细胞（Simple Cells）和复杂细胞（Complex Cells），它们都<strong>只对特定方向的条形图样刺激有反应</strong>。这两种细胞的主要区别是：简单细胞对应的视网膜上的光感受细胞所在的区域很小，而复杂细胞则对应更大的区域，这个区域被称为感受野（Receptive Field）。</p>
+<p>在卷积神经网络的基本结构中，使用<strong>卷积层</strong>来模拟对特定图案的响应，而<strong>池化层</strong>用于模拟感受野，其结构如下图所示：</p>
+<p><img src="https://goweild.oss-cn-beijing.aliyuncs.com/20210724204120.png" alt="卷积层+池化层的基本结构"></p>
+<p>输入首先经过卷积层得到响应，然后经过激活层做非线性变换。在这里，卷积本身也可以看做是一种线性变换，再考虑到偏置项，这种仿射变换+非线性变换的操作其实就是一般神经网络中的基本操作的一种特殊情况，主要是池化层特殊一点。</p>
+<h3 id="1-1-卷积层"><a href="#1-1-卷积层" class="headerlink" title="1.1 卷积层"></a>1.1 卷积层</h3><p>卷积层的主要作用是对输入的数据进行特征提取。如果认为卷积核代表某种特征的话，卷积的结果就是输入对这种特征的响应。</p>
+<p><img src="https://goweild.oss-cn-beijing.aliyuncs.com/20210724204816.png" alt="图像对于卷积核的响应"></p>
+<p>上面一排照片的画面中是5架战斗机，把其中一架战斗机的图像截取出来，减去均值作为卷积核，然后和原图做卷积，得到的结果如下面一排图像所示。可以很明显的看到，每架战机所在的位置得到了一个很大的响应。由此可得，<strong>卷积核可以找到图像中和自身纹理最相似的部分，且相似度越高，得到的响应值越大</strong>。</p>
+<h3 id="1-2-卷积的计算过程"><a href="#1-2-卷积的计算过程" class="headerlink" title="1.2 卷积的计算过程"></a>1.2 卷积的计算过程</h3><p><img src="https://goweild.oss-cn-beijing.aliyuncs.com/20210724205734.png" alt=""></p>
+<p>对应位置相乘，然后求和，即为卷积结果：</p>
+<script type="math/tex; mode=display">
+0\times4 + 0\times0+0\times0+0\times0+1\times0+1\times0+0\times0+1\times0+2\times(-4)=-8</script><p>输出的图像也叫做<strong>特征响应图（feature map）</strong>。</p>
+<p>可以看到，在输入图像的最外层多了一圈全为0的像素，这是一种用于提升卷积效果的边界像素填充方式。在卷积之前，有两种填充方式：Same和Valid。Valid方式是不填充，直接进行卷积；Same方式就是在输入图像的最外层加上指定层数的0像素边界，其目的是<strong>让输入图像的全部像素都能被滑动窗口捕捉</strong>。</p>
+<p>经过一轮卷积后，输出图像的宽度、高度满足下面的公式：</p>
+<script type="math/tex; mode=display">
+W_{output}=\frac{W_{input}-W_{filter}+2P}{S}+1 \\
+H_{output}=\frac{H_{input}-H_{filter}+2P}{S}+1</script><p>其中，$S$代表卷积核的步长，$P$代表图像边缘增加的边界像素层数。</p>
+<p>如果是单色彩通道图像，到这里就已经结束了。但实际中一般都是三色彩通道图像，可以<strong>将三通道的卷积看做三个独立的单通道卷积过程，然后将卷积结果相加，就得到了最后的输出结果</strong>。</p>
+<p>对于一个一般的卷积层，考虑输入为$x$，其中每个通道为$x_i$；输出为$y$，其中每个通道为$y_j$，从$x$到多通道特征响应图$y$的公式如下：</p>
+<script type="math/tex; mode=display">
+y_j = g(\sum_i{x_i * w_{ij}})</script><p>其中，$w_{ij}$代表第$j$个特征响应图对应的卷积层中，与第$i$和输入通道进行卷积的卷积核（<strong>卷积核可能有多个，卷积层的输出特征图通道数等于卷积层的卷积核个数</strong>），$g$是激活函数。</p>
+<blockquote>
+<p><a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_39504171/article/details/104648113">机器学习28:多卷积核处理多通道特征图机制</a></p>
+</blockquote>
+<h3 id="1-3-激活函数"><a href="#1-3-激活函数" class="headerlink" title="1.3 激活函数"></a>1.3 激活函数</h3><p>卷积层的激活函数和全连接层的差不多，就是给卷积结果做一个非线性变换，常用的是ReLU函数，只取响应大于0的部分，保留相关程度大的信息。</p>
+<h3 id="1-4-池化层（Pooling）"><a href="#1-4-池化层（Pooling）" class="headerlink" title="1.4 池化层（Pooling）"></a>1.4 池化层（Pooling）</h3><p>池化代表一种对统计信息的提取。在卷积神经网络中，池化一般指的是对特征响应图上的一个给定区域求出一个能够代表这个区域特点的值，深度学习中常见的两种池化是最大值池化（max-pooling）和平均值池化（average-pooling）。</p>
+<p>在池化层中，也需要定义一个类似卷积层中卷积核的滑动窗口，但是<strong>这个滑动窗口仅用于提取特征图中的重要特征，本身并没有参数</strong>。</p>
+<h4 id="最大值池化"><a href="#最大值池化" class="headerlink" title="最大值池化"></a>最大值池化</h4><p>通过滑动窗口选出特征图中的数据，然后将其中的最大值作为最后的输出结果。</p>
+<h4 id="平均值池化"><a href="#平均值池化" class="headerlink" title="平均值池化"></a>平均值池化</h4><p>通过滑动窗口选出特征图中的数据，然后求和、取均值，作为最后的输出结果。</p>
+<p>经过一轮池化操作后，输出的特征图的宽度和高度为</p>
+<script type="math/tex; mode=display">
+W_{output}=\frac{W_{input}-W_{filter}}{S}+1 \\
+H_{output}=\frac{H_{input}-H_{filter}}{S}+1</script><p>其中，$S$表示滑动窗口的步长，<strong>输入的特征图的深度和滑动窗口的深度保持一致</strong>。</p>
 
-        <div class="article-info info-on-right">
-          
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -191,57 +252,126 @@
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://example.com/2021/07/26/%E5%8D%B7%E7%A7%AF%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E5%9F%BA%E7%A1%80/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2021/07/24/%E6%B7%B1%E5%BA%A6%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E5%9F%BA%E7%A1%80/" class="archive-article-date">
-  	<time datetime="2021-07-24T05:21:11.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-07-24</time>
-</a>
+<nav id="article-nav">
+  
+  
+    <a href="/2021/07/24/%E6%B7%B1%E5%BA%A6%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E5%9F%BA%E7%A1%80/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">深度神经网络基础</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
+        
+        
+    </div>
+</aside>
+
+
+
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2021/07/24/%E6%B7%B1%E5%BA%A6%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E5%9F%BA%E7%A1%80/">深度神经网络基础</a>
-    </h1>
+  <div class="duoshuo">
+	<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="卷积神经网络基础" data-title="卷积神经网络基础" data-url="http://example.com/2021/07/26/%E5%8D%B7%E7%A7%AF%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E5%9F%BA%E7%A1%80/"></div>
+	<!-- 多说评论框 end -->
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:"true"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+	<!-- 多说公共JS代码 end -->
+</div>
+
+  
+  
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">机器学习</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
   
 
-    
+  
+
+  
 
 
           </div>
@@ -264,8 +394,8 @@
 	var yiliaConfig = {
 		mathjax: true,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
