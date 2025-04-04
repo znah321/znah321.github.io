@@ -26,11 +26,21 @@ My research interest includes neural machine translation and computer vision. I 
 - *2022.02*: &nbsp;🎉🎉 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
 - *2022.02*: &nbsp;🎉🎉 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
 
-# 📝 Publications 
-- [Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet](https://github.com), A, B, C, **CVPR 2020**
-- **X. Wei**, W. Mei, D. Wang, B. Ning and Z. Chen, ["Joint Beamforming and Antenna Position Optimization for Movable Antenna-Assisted Spectrum Sharing,"](https://ieeexplore.ieee.org/abstract/document/10579873) *IEEE Wireless Communications Letters*, vol. 13, no. 9, pp. 2502-2506, Sept. 2024.
-- **X. Wei**, W. Mei and Z. Chen, ["Hybrid Linear and Nonlinear Uplink Cooperative Interference Cancellation for Cellular-Connected UAV,"](https://ieeexplore.ieee.org/abstract/document/10683202) *2024 IEEE 99th Vehicular Technology Conference (VTC2024-Spring)*, Singapore, Singapore, 2024, pp. 1-5.
-- W. Mei, **X. Wei**, B. Ning, Z. Chen and R. Zhang, ["Movable-Antenna Position Optimization: A Graph-Based Approach,"](https://ieeexplore.ieee.org/abstract/document/10508218) *IEEE Wireless Communications Letters*, vol. 13, no. 7, pp. 1853-1857, July 2024.
+# 📝 Publications
+- Submitted
+  - L. Lu, W. Mei, **X. Wei**, H. Hua, Z. Chen, and B, Ning, "Learning-Based Movable-Antenna Position Optimization with Implicit CSI", submitted to *IEEE PIMRC*.
+  - Y. Huang, W. Mei, **X. Wei**, B. Ning, and Z. Chen, "CNN-Based Channel Map Estimation for Movable Antenna Assisted Wireless Communications", submitted to *IEEE Wireless Communications Letters*.
+  - H. Ma, W. Mei, **X. Wei**, B. Ning, and Z. Chen, "Robust Movable-Antenna Position Optimization with Imperfect CSI for MISO Systems", submitted to *IEEE Communications Letters*.
+  - **X. Wei**, W. Mei, Q. Wu, Q. Jia, B. Ning, Z. Chen, and J. Fang, ["Movable Antennas Meet Intelligent Reflecting Surface: Friends or Foes?"](https://arxiv.org/pdf/2501.15880), submitted to *IEEE Transactions on Communications*.
+  - K. Liu, **X. Wei**, W. Mei, X. Wei, B. Ning, and Z. Chen, "Movable Antennas for THz Multicasting: Grating-Lobe Analysis and Position Optimization", submitted to *SCIENCE CHINA Informatioin Sciences*.
+- Accepted
+  - Y. Wang, W. Mei, **X. Wei**, B. Ning, and Z. Chen, ["Antenna Position Optimization for Movable Antenna-Empowered Near-Field Sensing,"](https://arxiv.org/abs/2502.03169) to appear in *IEEE ICC Workshop*.
+- Published
+  - **X. Wei**, W. Mei, Q. Wu, B. Ning and Z. Chen, ["Movable Antennas Meet Intelligent Reflecting Surface: When Do We Need Movable Antennas?"](https://arxiv.org/abs/2408.15668), to appear in *IEEE WCNC*.
+  - W. Mei, **X. Wei**, Y. Liu, B. Ning and Z. Chen, ["Movable-Antenna Position Optimization for Physical-Layer Security via Discrete Sampling,"](https://ieeexplore.ieee.org/document/10901621) *GLOBECOM 2024 - 2024 IEEE Global Communications Conference*, Cape Town, South Africa, 2024, pp. 4750-4755.
+  - **X. Wei**, W. Mei, D. Wang, B. Ning and Z. Chen, ["Joint Beamforming and Antenna Position Optimization for Movable Antenna-Assisted Spectrum Sharing,"](https://ieeexplore.ieee.org/abstract/document/10579873) *IEEE Wireless Communications Letters*, vol. 13, no. 9, pp. 2502-2506, Sept. 2024.
+  - W. Mei, **X. Wei**, B. Ning, Z. Chen and R. Zhang, ["Movable-Antenna Position Optimization: A Graph-Based Approach,"](https://ieeexplore.ieee.org/abstract/document/10508218) *IEEE Wireless Communications Letters*, vol. 13, no. 7, pp. 1853-1857, July 2024.
+  - **X. Wei**, W. Mei and Z. Chen, ["Hybrid Linear and Nonlinear Uplink Cooperative Interference Cancellation for Cellular-Connected UAV,"](https://ieeexplore.ieee.org/abstract/document/10683202) *2024 IEEE 99th Vehicular Technology Conference (VTC2024-Spring)*, Singapore, Singapore, 2024, pp. 1-5.
 
 # 🎖 Honors and Awards
 - *2021.10* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
