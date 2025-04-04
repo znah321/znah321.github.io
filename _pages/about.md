@@ -43,10 +43,6 @@ My research interest includes neural machine translation and computer vision. I 
   - W. Mei, **X. Wei**, B. Ning, Z. Chen and R. Zhang, ["Movable-Antenna Position Optimization: A Graph-Based Approach,"](https://ieeexplore.ieee.org/abstract/document/10508218) *IEEE Wireless Communications Letters*, vol. 13, no. 7, pp. 1853-1857, July 2024.
   - **X. Wei**, W. Mei and Z. Chen, ["Hybrid Linear and Nonlinear Uplink Cooperative Interference Cancellation for Cellular-Connected UAV,"](https://ieeexplore.ieee.org/abstract/document/10683202) *2024 IEEE 99th Vehicular Technology Conference (VTC2024-Spring)*, Singapore, Singapore, 2024, pp. 1-5.
 
-# 🎖 Honors and Awards
-- *2021.10* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
-- *2021.09* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
-
 # 📖 Educations
-- *2019.06 - 2022.04 (now)*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
-- *2015.09 - 2019.06*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
+- *2023.09 - 2025.04 (now)*, Master, National Key Lab of Wireless Communications, University of Electronic Science and Technology of China, Chengdu. 
+- *2019.09 - 2023.06*, Undergraduate, School of Communication and Information Engineering, Chongqing University of Post and Telecommuincation, Chongqing.
