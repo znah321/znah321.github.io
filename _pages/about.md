@@ -35,8 +35,8 @@ My research interest includes neural machine translation and computer vision. I 
   - K. Liu, **X. Wei**, W. Mei, X. Wei, B. Ning, and Z. Chen, "Movable Antennas for THz Multicasting: Grating-Lobe Analysis and Position Optimization", submitted to *SCIENCE CHINA Informatioin Sciences*.
 - Accepted
   - Y. Wang, W. Mei, **X. Wei**, B. Ning, and Z. Chen, ["Antenna Position Optimization for Movable Antenna-Empowered Near-Field Sensing,"](https://arxiv.org/abs/2502.03169) to appear in *IEEE ICC Workshop*.
-- Published
   - **X. Wei**, W. Mei, Q. Wu, B. Ning and Z. Chen, ["Movable Antennas Meet Intelligent Reflecting Surface: When Do We Need Movable Antennas?"](https://arxiv.org/abs/2408.15668), to appear in *IEEE WCNC*.
+- Published
   - W. Mei, **X. Wei**, Y. Liu, B. Ning and Z. Chen, ["Movable-Antenna Position Optimization for Physical-Layer Security via Discrete Sampling,"](https://ieeexplore.ieee.org/document/10901621) *GLOBECOM 2024 - 2024 IEEE Global Communications Conference*, Cape Town, South Africa, 2024, pp. 4750-4755.
   - **X. Wei**, W. Mei, D. Wang, B. Ning and Z. Chen, ["Joint Beamforming and Antenna Position Optimization for Movable Antenna-Assisted Spectrum Sharing,"](https://ieeexplore.ieee.org/abstract/document/10579873) *IEEE Wireless Communications Letters*, vol. 13, no. 9, pp. 2502-2506, Sept. 2024.
   - W. Mei, **X. Wei**, B. Ning, Z. Chen and R. Zhang, ["Movable-Antenna Position Optimization: A Graph-Based Approach,"](https://ieeexplore.ieee.org/abstract/document/10508218) *IEEE Wireless Communications Letters*, vol. 13, no. 7, pp. 1853-1857, July 2024.
