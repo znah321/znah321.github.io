@@ -30,7 +30,7 @@ My research interest includes neural machine translation and computer vision. I 
 - Submitted
   - X. Shen, **X. Wei**, W. Mei, Z. Chen, J. Fang, B. Ning, "Movable-Antenna-Enhanced Physical-Layer Service Integration: Performance Analysis and Optimization", submitted to *IEEE Wireless Communications Letters*.
   - L. Lu, W. Mei, **X. Wei**, H. Hua, Z. Chen, and B. Ning, "Learning-Based Movable-Antenna Position Optimization with Implicit CSI", submitted to *IEEE PIMRC*.
-  - Y. Huang, W. Mei, **X. Wei**, B. Ning, and Z. Chen, "CNN-Based Channel Map Estimation for Movable Antenna Assisted Wireless Communications", submitted to *IEEE Wireless Communications Letters*.
+  - Y. Huang, W. Mei, **X. Wei**, B. Ning, and Z. Chen, "CNN-Based Channel Map Estimation for Movable Antenna Assisted Wireless Communications", submitted to *IEEE SPAWC*.
   - H. Ma, W. Mei, **X. Wei**, B. Ning, and Z. Chen, "Robust Movable-Antenna Position Optimization with Imperfect CSI for MISO Systems", submitted to *IEEE Communications Letters*.
   - **X. Wei**, W. Mei, Q. Wu, Q. Jia, B. Ning, Z. Chen, and J. Fang, ["Movable Antennas Meet Intelligent Reflecting Surface: Friends or Foes?"](https://arxiv.org/pdf/2501.15880), submitted to *IEEE Transactions on Communications*.
   - K. Liu, **X. Wei**, W. Mei, X. Wei, B. Ning, and Z. Chen, "Movable Antennas for THz Multicasting: Grating-Lobe Analysis and Position Optimization", submitted to *SCIENCE CHINA Informatioin Sciences*.
