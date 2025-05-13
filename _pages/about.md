@@ -35,10 +35,10 @@ My research interest includes neural machine translation and computer vision. I 
   - **X. Wei**, W. Mei, Q. Wu, Q. Jia, B. Ning, Z. Chen, and J. Fang, ["Movable Antennas Meet Intelligent Reflecting Surface: Friends or Foes?"](https://arxiv.org/pdf/2501.15880), submitted to *IEEE Transactions on Communications*.
 - Accepted
   - **X. Wei**, W. Mei, Q, Jia, D. Wang, Z. Chen, B. Ning, "Super-Resolution Channel Estimation for Movable Antennas via Atomic Norm Minimization". to appear in *International Conference on Electronics, Circuits and Information Engineering (ECIE)*.
-  - H. Ma, W. Mei, **X. Wei**, B. Ning, and Z. Chen, "Robust Movable-Antenna Position Optimization with Imperfect CSI for MISO Systems", to appear in *IEEE Communications Letters*.
+  - H. Ma, W. Mei, **X. Wei**, B. Ning, and Z. Chen, ["Robust Movable-Antenna Position Optimization with Imperfect CSI for MISO Systems"](https://arxiv.org/abs/2505.07035), to appear in *IEEE Communications Letters*.
   - K. Liu, **X. Wei**, W. Mei, X. Wei, B. Ning, and Z. Chen, "Movable Antennas for THz Multicasting: Grating-Lobe Analysis and Position Optimization", to appear in *SCIENCE CHINA Informatioin Sciences*.
   - Y. Wang, W. Mei, **X. Wei**, B. Ning, and Z. Chen, ["Antenna Position Optimization for Movable Antenna-Empowered Near-Field Sensing,"](https://arxiv.org/abs/2502.03169) to appear in *IEEE ICC Workshop*.
-  - K. Liu, **X. Wei**, W. Mei, D. Wang, B. Ning, and Z. Chen, "Manipulating Multi-Path Channel Orthogonality via Movable Antennas", to appear in *Future Communications and Networks (FCN)*. 
+  - K. Liu, **X. Wei**, W. Mei, D. Wang, B. Ning, and Z. Chen, ["Manipulating Multi-Path Channel Orthogonality via Movable Antennas"](https://ieeexplore.ieee.org/document/10985353), *2024 International Conference on Future Communications and Networks (FCN)*, Valletta, Malta, 2024, pp. 1-6. 
 - Published
   - **X. Wei**, W. Mei, Q. Wu, B. Ning and Z. Chen, ["Movable Antennas Meet Intelligent Reflecting Surface: When Do We Need Movable Antennas?"](https://arxiv.org/abs/2408.15668), *2025 IEEE Wireless Communications and Networking Conference (WCNC)*, Milan, Italy, 2025, pp. 1-6.
   - W. Mei, **X. Wei**, Y. Liu, B. Ning and Z. Chen, ["Movable-Antenna Position Optimization for Physical-Layer Security via Discrete Sampling,"](https://ieeexplore.ieee.org/document/10901621) *GLOBECOM 2024 - 2024 IEEE Global Communications Conference*, Cape Town, South Africa, 2024, pp. 4750-4755.
