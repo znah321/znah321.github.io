@@ -28,6 +28,7 @@ My research interest includes neural machine translation and computer vision. I 
 
 # 📝 Publications
 - Submitted
+  - N. Su, W. Mei, **X. Wei**, Z. Chen, B. Ning, "Movable Antenna-Enhanced Near-Field Beamforming: Impact of Antenna Position Errors", submitted to *FCN*.
   - **X. Wei**, W. Mei, X. Huang, Z. Chen, B. Ning, ["Mechanical Power Modeling and Energy Efficiency Maximization for Movable Antenna Systems"](https://arxiv.org/abs/2505.05914), submitted to *IEEE GlobeCom*.
   - X. Shen, **X. Wei**, W. Mei, Z. Chen, J. Fang, B. Ning, "Movable-Antenna-Enhanced Physical-Layer Service Integration: Performance Analysis and Optimization", submitted to *IEEE Wireless Communications Letters*.
   - L. Lu, W. Mei, **X. Wei**, H. Hua, Z. Chen, and B. Ning, "Learning-Based Movable-Antenna Position Optimization with Implicit CSI", submitted to *IEEE PIMRC*.
@@ -43,12 +44,12 @@ My research interest includes neural machine translation and computer vision. I 
   - **X. Wei**, W. Mei, Q. Wu, B. Ning and Z. Chen, ["Movable Antennas Meet Intelligent Reflecting Surface: When Do We Need Movable Antennas?"](https://arxiv.org/abs/2408.15668), *2025 IEEE Wireless Communications and Networking Conference (WCNC)*, Milan, Italy, 2025, pp. 1-6.
   - W. Mei, **X. Wei**, Y. Liu, B. Ning and Z. Chen, ["Movable-Antenna Position Optimization for Physical-Layer Security via Discrete Sampling,"](https://ieeexplore.ieee.org/document/10901621) *GLOBECOM 2024 - 2024 IEEE Global Communications Conference*, Cape Town, South Africa, 2024, pp. 4750-4755.
   - **X. Wei**, W. Mei, D. Wang, B. Ning and Z. Chen, ["Joint Beamforming and Antenna Position Optimization for Movable Antenna-Assisted Spectrum Sharing,"](https://ieeexplore.ieee.org/abstract/document/10579873) *IEEE Wireless Communications Letters*, vol. 13, no. 9, pp. 2502-2506, Sept. 2024.
-  - W. Mei, **X. Wei**, B. Ning, Z. Chen and R. Zhang, ["Movable-Antenna Position Optimization: A Graph-Based Approach,"](https://ieeexplore.ieee.org/abstract/document/10508218) *IEEE Wireless Communications Letters*, vol. 13, no. 7, pp. 1853-1857, July 2024.
+  - `IEEE WCL` W. Mei, **X. Wei**, B. Ning, Z. Chen and R. Zhang, ["Movable-Antenna Position Optimization: A Graph-Based Approach,"](https://ieeexplore.ieee.org/abstract/document/10508218) *IEEE Wireless Communications Letters*, vol. 13, no. 7, pp. 1853-1857, July 2024.
   - **X. Wei**, W. Mei and Z. Chen, ["Hybrid Linear and Nonlinear Uplink Cooperative Interference Cancellation for Cellular-Connected UAV,"](https://ieeexplore.ieee.org/abstract/document/10683202) *2024 IEEE 99th Vehicular Technology Conference (VTC2024-Spring)*, Singapore, Singapore, 2024, pp. 1-5.
 
 # 🎖 Honors and Awards
 - *2024.12* [IEEE ComSoc SPCC-TC Student Challenge and Video Contest](https://news.uestc.edu.cn/?n=UestcNews.Front.DocumentV2.ArticlePage&Id=94324), Champion.
 
 # 📖 Educations
-- *2023.09 - 2025.04 (now)*, Master, National Key Lab of Wireless Communications, University of Electronic Science and Technology of China, Chengdu. 
+- *2023.09 - Present*, Master, National Key Lab of Wireless Communications, University of Electronic Science and Technology of China, Chengdu. 
 - *2019.09 - 2023.06*, Undergraduate, School of Communication and Information Engineering, Chongqing University of Post and Telecommuincation, Chongqing.
