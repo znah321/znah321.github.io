@@ -28,19 +28,20 @@ My research interest includes neural machine translation and computer vision. I 
 
 # 📝 Publications
 - Submitted
+  - Q. Wu, Z. Zheng, Y. Gao, W. Mei, **X. Wei**, W. Chen, B. Ning, "Integrating Movable Antennas and Intelligent Reflecting Surfaces (MA-IRS): Fundamentals, Practical Solutions, and Opportunities", submitted to *IEEE Wireless Communications*.
   - N. Su, W. Mei, **X. Wei**, Z. Chen, B. Ning, "Movable Antenna-Enhanced Near-Field Beamforming: Impact of Antenna Position Errors", submitted to *FCN*.
   - **X. Wei**, W. Mei, X. Huang, Z. Chen, B. Ning, ["Mechanical Power Modeling and Energy Efficiency Maximization for Movable Antenna Systems"](https://arxiv.org/abs/2505.05914), submitted to *IEEE GlobeCom*.
   - X. Shen, **X. Wei**, W. Mei, Z. Chen, J. Fang, B. Ning, "Movable-Antenna-Enhanced Physical-Layer Service Integration: Performance Analysis and Optimization", submitted to *IEEE Wireless Communications Letters*.
-  - L. Lu, W. Mei, **X. Wei**, H. Hua, Z. Chen, and B. Ning, "Learning-Based Movable-Antenna Position Optimization with Implicit CSI", submitted to *IEEE PIMRC*.
   - **X. Wei**, W. Mei, Q. Wu, Q. Jia, B. Ning, Z. Chen, and J. Fang, ["Movable Antennas Meet Intelligent Reflecting Surface: Friends or Foes?"](https://arxiv.org/pdf/2501.15880), submitted to *IEEE Transactions on Communications*.
 - Accepted
+  - L. Lu, W. Mei, **X. Wei**, H. Hua, Z. Chen, and B. Ning, "Learning-Based Movable-Antenna Position Optimization with Implicit CSI", to appear in *IEEE PIMRC*.
   - Y. Huang, W. Mei, **X. Wei**, B. Ning, and Z. Chen, "CNN-Based Channel Map Estimation for Movable Antenna Assisted Wireless Communications", to appear in *IEEE SPAWC*.
   - **X. Wei**, W. Mei, Q, Jia, D. Wang, Z. Chen, B. Ning, "Super-Resolution Channel Estimation for Movable Antennas via Atomic Norm Minimization". to appear in *International Conference on Electronics, Circuits and Information Engineering (ECIE)*.
   - H. Ma, W. Mei, **X. Wei**, B. Ning, and Z. Chen, ["Robust Movable-Antenna Position Optimization with Imperfect CSI for MISO Systems"](https://arxiv.org/abs/2505.07035), to appear in *IEEE Communications Letters*.
   - K. Liu, **X. Wei**, W. Mei, X. Wei, B. Ning, and Z. Chen, "Movable Antennas for THz Multicasting: Grating-Lobe Analysis and Position Optimization", to appear in *SCIENCE CHINA Informatioin Sciences*.
-  - Y. Wang, W. Mei, **X. Wei**, B. Ning, and Z. Chen, ["Antenna Position Optimization for Movable Antenna-Empowered Near-Field Sensing,"](https://arxiv.org/abs/2502.03169) to appear in *IEEE ICC Workshop*.
-  - K. Liu, **X. Wei**, W. Mei, D. Wang, B. Ning, and Z. Chen, ["Manipulating Multi-Path Channel Orthogonality via Movable Antennas"](https://ieeexplore.ieee.org/document/10985353), *2024 International Conference on Future Communications and Networks (FCN)*, Valletta, Malta, 2024, pp. 1-6. 
+  - Y. Wang, W. Mei, **X. Wei**, B. Ning, and Z. Chen, ["Antenna Position Optimization for Movable Antenna-Empowered Near-Field Sensing,"](https://arxiv.org/abs/2502.03169) to appear in *IEEE ICC Workshop*. 
 - Published
+  - K. Liu, **X. Wei**, W. Mei, D. Wang, B. Ning, and Z. Chen, ["Manipulating Multi-Path Channel Orthogonality via Movable Antennas"](https://ieeexplore.ieee.org/document/10985353), *2024 International Conference on Future Communications and Networks (FCN)*, Valletta, Malta, 2024, pp. 1-6.
   - **X. Wei**, W. Mei, Q. Wu, B. Ning and Z. Chen, ["Movable Antennas Meet Intelligent Reflecting Surface: When Do We Need Movable Antennas?"](https://arxiv.org/abs/2408.15668), *2025 IEEE Wireless Communications and Networking Conference (WCNC)*, Milan, Italy, 2025, pp. 1-6.
   - W. Mei, **X. Wei**, Y. Liu, B. Ning and Z. Chen, ["Movable-Antenna Position Optimization for Physical-Layer Security via Discrete Sampling,"](https://ieeexplore.ieee.org/document/10901621) *GLOBECOM 2024 - 2024 IEEE Global Communications Conference*, Cape Town, South Africa, 2024, pp. 4750-4755.
   - ``IEEE WCL`` **X. Wei**, W. Mei, D. Wang, B. Ning and Z. Chen, ["Joint Beamforming and Antenna Position Optimization for Movable Antenna-Assisted Spectrum Sharing,"](https://ieeexplore.ieee.org/abstract/document/10579873) *IEEE Wireless Communications Letters*, vol. 13, no. 9, pp. 2502-2506, Sept. 2024.
