@@ -31,8 +31,8 @@ My research interest includes neural machine translation and computer vision. I 
   - Q. Wu, Z. Zheng, Y. Gao, W. Mei, **X. Wei**, W. Chen, B. Ning, ["Integrating Movable Antennas and Intelligent Reflecting Surfaces (MA-IRS): Fundamentals, Practical Solutions, and Opportunities"](https://arxiv.org/abs/2506.14636), submitted to *IEEE Wireless Communications*.
   - N. Su, W. Mei, **X. Wei**, Z. Chen, B. Ning, "Movable Antenna-Enhanced Near-Field Beamforming: Impact of Antenna Position Errors", submitted to *FCN*.
   - **X. Wei**, W. Mei, X. Huang, Z. Chen, B. Ning, ["Mechanical Power Modeling and Energy Efficiency Maximization for Movable Antenna Systems"](https://arxiv.org/abs/2505.05914), submitted to *IEEE GlobeCom*.
-  - **X. Wei**, W. Mei, Q. Wu, Q. Jia, B. Ning, Z. Chen, and J. Fang, ["Movable Antennas Meet Intelligent Reflecting Surface: Friends or Foes?"](https://arxiv.org/pdf/2501.15880), submitted to *IEEE Transactions on Communications*.
 - Accepted
+  - **X. Wei**, W. Mei, Q. Wu, Q. Jia, B. Ning, Z. Chen, and J. Fang, ["Movable Antennas Meet Intelligent Reflecting Surface: Friends or Foes?"](https://arxiv.org/pdf/2501.15880), to appear in *IEEE Transactions on Communications*.
   - X. Shen, **X. Wei**, W. Mei, Z. Chen, J. Fang, B. Ning, "Movable-Antenna-Enhanced Physical-Layer Service Integration: Performance Analysis and Optimization", to appear in *IEEE Wireless Communications Letters*.
   - L. Lu, W. Mei, **X. Wei**, H. Hua, Z. Chen, and B. Ning, "Learning-Based Movable-Antenna Position Optimization with Implicit CSI", to appear in *IEEE PIMRC*.
   - Y. Huang, W. Mei, **X. Wei**, B. Ning, and Z. Chen, "CNN-Based Channel Map Estimation for Movable Antenna Assisted Wireless Communications", to appear in *IEEE SPAWC*.
