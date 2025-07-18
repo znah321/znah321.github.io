@@ -33,9 +33,12 @@ My research interest includes neural machine translation and computer vision. I 
 
 <hr style="border: 2px dashed #B22222;" />
 <h2 style="color: darkred;"> 👨‍👩‍👧‍👦 Collaborated Journals:</h2>
-- N. Su, W. Mei, **X. Wei**, Z. Chen, B. Ning, "Movable Antenna-Enhanced Near-Field Beamforming: Impact of Antenna Position Errors", to appear in *FCN*.
-- `IEEE TCOM` **X. Wei**, W. Mei, Q. Wu, Q. Jia, B. Ning, Z. Chen, and J. Fang, ["Movable Antennas Meet Intelligent Reflecting Surface: Friends or Foes?"](https://arxiv.org/pdf/2501.15880), to appear in *IEEE Transactions on Communications*.
+- ``IEEE TCOM`` **X. Wei**, W. Mei, Q. Wu, Q. Jia, B. Ning, Z. Chen, and J. Fang, ["Movable Antennas Meet Intelligent Reflecting Surface: Friends or Foes?"](https://arxiv.org/pdf/2501.15880), to appear in *IEEE Transactions on Communications*.
 - ``IEEE WCL`` X. Shen, **X. Wei**, W. Mei, Z. Chen, J. Fang, B. Ning, "Movable-Antenna-Enhanced Physical-Layer Service Integration: Performance Analysis and Optimization", to appear in *IEEE Wireless Communications Letters*.
+
+
+
+- N. Su, W. Mei, **X. Wei**, Z. Chen, B. Ning, "Movable Antenna-Enhanced Near-Field Beamforming: Impact of Antenna Position Errors", to appear in *FCN*.
 - L. Lu, W. Mei, **X. Wei**, H. Hua, Z. Chen, and B. Ning, "Learning-Based Movable-Antenna Position Optimization with Implicit CSI", to appear in *IEEE PIMRC*.
 - Y. Huang, W. Mei, **X. Wei**, B. Ning, and Z. Chen, "CNN-Based Channel Map Estimation for Movable Antenna Assisted Wireless Communications", to appear in *IEEE SPAWC*.
 - **X. Wei**, W. Mei, Q, Jia, D. Wang, Z. Chen, B. Ning, "Super-Resolution Channel Estimation for Movable Antennas via Atomic Norm Minimization". to appear in *International Conference on Electronics, Circuits and Information Engineering (ECIE)*.
