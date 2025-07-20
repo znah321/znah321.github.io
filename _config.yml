@@ -7,9 +7,9 @@
 
 # Site Settings
 title                    : "Xin Wei"
-description              : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. "
+description              : "Student"
 repository               : "znah321/znah321.github.io"
-google_scholar_stats_use_cdn : true
+google_scholar_stats_use_cdn : false
 
 # google analytics
 google_analytics_id      :  # get google_analytics_id from https://analytics.google.com/analytics/
@@ -22,12 +22,12 @@ baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.ba
 # Site Author
 author:
   name             : "Xin Wei"
-  avatar           : "images/android-chrome-512x512.png"
-  bio              : "University of Electronic Science and Technology of China"
+  avatar           : "/images/android-chrome-512x512.png"
+  bio              : "University of Electronic Science and Technology of China."
   location         : "Chengdu, China"
   employer         :
   pubmed           : 
-  googlescholar    : "https://scholar.google.com/citations?user=pkDJmeMAAAAJ"
+  googlescholar    : "https://scholar.google.com/citations?user=pkDJmeMAAAAJ&hl=zh-CN"
   email            : "xinwei@std.uestc.edu.cn"
   researchgate     :  # e.g., "https://www.researchgate.net/profile/yourprofile"
   uri              :
@@ -37,7 +37,7 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : # e.g., "github username"
+  github           : 
   google_plus      :
   keybase          :
   instagram        :
@@ -48,7 +48,7 @@ author:
   orcid            : # e.g., "https://orcid.org/xxxx"
   pinterest        :
   soundcloud       :
-  stackoverflow    : # http://stackoverflow.com/users/123456/username
+  stackoverflow    :
   steam            :
   tumblr           :
   twitter          : 
@@ -126,7 +126,20 @@ defaults:
     values:
       layout: default
       author_profile: true
-
+  - scope:
+      path: ""
+      type: cn
+    values:
+      layout: default
+      author_profile: true
+      toc: true
+  - scope:
+      path: ""
+      type: en
+    values:
+      layout: default
+      author_profile: true
+      toc: true
 
 # Sass/SCSS
 sass:
@@ -161,3 +174,14 @@ compress_html:
   clippings: all
   ignore:
     envs: development
+
+# Collections
+collections:
+  cn:
+    output: true
+    sort_by: part
+    permalink: /blog/:collection/:path/
+  en:
+    output: true
+    sort_by: part
+    permalink: /blog/:collection/:path/
