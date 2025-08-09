@@ -2,6 +2,7 @@
 
 <hr style="border: 2px dashed #B22222;" />
 <h2 style="color: darkred;">🀄 Submitted Journals and Conference Papers:</h2>
+- R. Feng, W. Mei\*, L. Lu, **X. Wei**, Z. Chen, Z. Gao, B. Ning, "Performance Optimization for Movable Antenna Enhanced MISO-OFDM Systems", submitted to *IEEE Globecom Workshop*.
 - S. Yang, **X. Wei**, N. Su, W. Mei\*, Z. Chen, B. Ning, "Movable Antenna-Enhanced Near-Field Flexible Beamforming: Performance Analysis and Optimization," submitted to *IEEE Transactions on Vehicular Technology*.
 - Q. Wu, Z. Zheng, Y. Gao, W. Mei, **X. Wei**, W. Chen, B. Ning, "Integrating Movable Antennas and Intelligent Reflecting Surfaces (MA-IRS): Fundamentals, Practical Solutions, and Opportunities", submitted to *IEEE Wireless Communications*. [[Available on arXiv]](https://arxiv.org/abs/2506.14636)
 <hr style="border: 2px dashed #B22222;" />
