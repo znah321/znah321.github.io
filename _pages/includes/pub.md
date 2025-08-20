@@ -19,7 +19,7 @@
 <h2 style="color: darkred;">📚 Published and Accepted Conference Papers：</h2>
 
 - {:.inline-badge} [12] `IEEE GLOBECOM` **X. Wei**, W. Mei\*, X. Huang, Z. Chen, B. Ning, "Mechanical Power Modeling and Energy Efficiency Maximization for Movable Antenna Systems", to appear in *IEEE GlobeCom*. [[Available on arXiv]](https://arxiv.org/abs/2505.05914) <span style="color:red">(First Author)
-- {:.inline-badge} [11] ``FCN`` N. Su, W. Mei\*, **X. Wei**, Z. Chen, B. Ning, "Movable Antenna-Enhanced Near-Field Beamforming: Impact of Antenna Position Errors", to appear in *FCN*.
+- {:.inline-badge} [11] ``FCN`` N. Su, W. Mei\*, **X. Wei**, Z. Chen, B. Ning, "Movable Antenna-Enhanced Near-Field Beamforming: Impact of Antenna Position Errors", to appear in *FCN*. <span style="color:red">(Student Best Paper Award)
 - {:.inline-badge} [10] ``IEEE PIMRC`` L. Lu, W. Mei\*, **X. Wei**, H. Hua, Z. Chen, and B. Ning, "Learning-Based Movable-Antenna Position Optimization with Implicit CSI", to appear in *IEEE PIMRC*.
 - {:.inline-badge} [9] ``IEEE SPAWC`` Y. Huang, W. Mei\*, **X. Wei**, B. Ning, and Z. Chen, "CNN-Based Channel Map Estimation for Movable Antenna Assisted Wireless Communications", to appear in *IEEE SPAWC*.
 - {:.inline-badge} [8] ``ECIE`` **X. Wei**, W. Mei\*, Q, Jia, D. Wang, Z. Chen, B. Ning, ["Super-Resolution Channel Estimation for Movable Antennas via Atomic Norm Minimization"](https://ieeexplore.ieee.org/document/11087029), *Proc. Int. Conf. on Elec., Circuits & Info. Eng.*, Guangzhou, China, 2025, pp. 145-148. <span style="color:red">(First Author)
