@@ -2,14 +2,13 @@
 
 <hr style="border: 2px dashed #B22222;" />
 <h2 style="color: darkred;">🀄 Submitted Journals and Conference Papers:</h2>
-- R. Feng, W. Mei\*, L. Lu, **X. Wei**, Z. Chen, Z. Gao, B. Ning, "Performance Optimization for Movable Antenna Enhanced MISO-OFDM Systems", submitted to *IEEE Globecom Workshop*.
 - S. Yang, **X. Wei**, N. Su, W. Mei\*, Z. Chen, B. Ning, "Movable Antenna-Enhanced Near-Field Flexible Beamforming: Performance Analysis and Optimization," submitted to *IEEE Transactions on Vehicular Technology*.
 - Q. Wu, Z. Zheng, Y. Gao, W. Mei, **X. Wei**, W. Chen, B. Ning, "Integrating Movable Antennas and Intelligent Reflecting Surfaces (MA-IRS): Fundamentals, Practical Solutions, and Opportunities", submitted to *IEEE Wireless Communications*. [[Available on arXiv]](https://arxiv.org/abs/2506.14636)
 <hr style="border: 2px dashed #B22222;" />
 
 <h2 style="color: darkred;">📚 Published and Accepted Journal Papers：</h2>
 - {:.inline-badge} [6] ``IEEE TCOM`` **X. Wei**, W. Mei\*, Q. Wu, Q. Jia, B. Ning, Z. Chen, and J. Fang, ["Movable Antennas Meet Intelligent Reflecting Surface: Friends or Foes?"](https://ieeexplore.ieee.org/document/11079678), *IEEE Trans. Commun.*, 2025, early access. [[Available on arXiv]](https://arxiv.org/pdf/2501.15880) <span style="color:red">(First Author)</span>
-- {:.inline-badge} [5] ``IEEE WCL`` X. Shen, **X. Wei**, W. Mei\*, Z. Chen, J. Fang, B. Ning, ["Movable-Antenna-Enhanced Physical-Layer Service Integration: Performance Analysis and Optimization"](https://ieeexplore.ieee.org/document/11054044), *IEEE Wireless Commun. Lett.*, 2025, early access. [[Available on arXiv]](https://arxiv.org/pdf/2408.08322)
+- {:.inline-badge} [5] ``IEEE WCL`` X. Shen, **X. Wei**, W. Mei\*, Z. Chen, J. Fang, B. Ning, ["Movable-Antenna-Enhanced Physical-Layer Service Integration: Performance Analysis and Optimization"](https://ieeexplore.ieee.org/document/11054044), *IEEE Wireless Commun. Lett.*, vol. 14, no. 9, pp. 2952-2956, Sept. 2025. [[Available on arXiv]](https://arxiv.org/pdf/2408.08322)
 - {:.inline-badge} [4] ``SCIS`` K. Liu, **X. Wei**, W. Mei\*, X. Wei, B. Ning, and Z. Chen, "Movable Antennas for THz Multicasting: Grating-Lobe Analysis and Position Optimization", *Sci. China Inf. Sci.*, 2025, early access.
 - {:.inline-badge} [3] ``IEEE COMML`` H. Ma, W. Mei\*, **X. Wei**, B. Ning, and Z. Chen, ["Robust Movable-Antenna Position Optimization with Imperfect CSI for MISO Systems"](https://ieeexplore.ieee.org/abstract/document/11000327/), *IEEE Commun. Lett.*, vol. 29, no. 7, pp. 1594-1598, July 2025. [[Available on arXiv]](https://arxiv.org/abs/2505.07035)
 - {:.inline-badge} [2] ``IEEE WCL`` **X. Wei**, W. Mei\*, D. Wang, B. Ning and Z. Chen, ["Joint Beamforming and Antenna Position Optimization for Movable Antenna-Assisted Spectrum Sharing,"](https://ieeexplore.ieee.org/abstract/document/10579873) *IEEE Wireless Commun. Lett.*, vol. 13, no. 9, pp. 2502-2506, Sept. 2024. [[Available on arXiv]](https://arxiv.org/pdf/2406.19590) <span style="color:red">(First Author)</span>
@@ -17,7 +16,7 @@
 <hr style="border: 2px dashed #B22222;" />
 
 <h2 style="color: darkred;">📚 Published and Accepted Conference Papers：</h2>
-
+- {:.inline-badge} [13] `IEEE GLOBECOM` R. Feng, W. Mei\*, L. Lu, **X. Wei**, Z. Chen, Z. Gao, B. Ning, "Performance Optimization for Movable Antenna Enhanced MISO-OFDM Systems", to appear in *IEEE Globecom Workshop*.
 - {:.inline-badge} [12] `IEEE GLOBECOM` **X. Wei**, W. Mei\*, X. Huang, Z. Chen, B. Ning, "Mechanical Power Modeling and Energy Efficiency Maximization for Movable Antenna Systems", to appear in *IEEE GlobeCom*. [[Available on arXiv]](https://arxiv.org/abs/2505.05914) <span style="color:red">(First Author)
 - {:.inline-badge} [11] ``FCN`` N. Su, W. Mei\*, **X. Wei**, Z. Chen, B. Ning, "Movable Antenna-Enhanced Near-Field Beamforming: Impact of Antenna Position Errors", to appear in *FCN*. <span style="color:red">(Student Best Paper Award)
 - {:.inline-badge} [10] ``IEEE PIMRC`` L. Lu, W. Mei\*, **X. Wei**, H. Hua, Z. Chen, and B. Ning, "Learning-Based Movable-Antenna Position Optimization with Implicit CSI", to appear in *IEEE PIMRC*.
