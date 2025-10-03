@@ -17,7 +17,7 @@
 <hr style="border: 2px dashed #B22222;" />
 
 <h2 style="color: darkred;">📚 Published and Accepted Conference Papers：</h2>
-- {:.inline-badge} [13] `IEEE GLOBECOM` R. Feng, W. Mei\*, L. Lu, **X. Wei**, Z. Chen, Z. Gao, B. Ning, "Performance Optimization for Movable Antenna Enhanced MISO-OFDM Systems", to appear in *IEEE Globecom Workshop*.
+- {:.inline-badge} [13] `IEEE GLOBECOM` R. Feng, W. Mei\*, L. Lu, **X. Wei**, Z. Chen, Z. Gao, B. Ning, "Performance Optimization for Movable Antenna Enhanced MISO-OFDM Systems", to appear in *IEEE Globecom Workshop*. [[Available on arXiv]](https://arxiv.org/pdf/2510.01789)
 - {:.inline-badge} [12] `IEEE GLOBECOM` **X. Wei**, W. Mei\*, X. Huang, Z. Chen, B. Ning, "Mechanical Power Modeling and Energy Efficiency Maximization for Movable Antenna Systems", to appear in *IEEE GlobeCom*. [[Available on arXiv]](https://arxiv.org/abs/2505.05914) <span style="color:red">(First Author)
 - {:.inline-badge} [11] ``FCN`` N. Su, W. Mei\*, **X. Wei**, Z. Chen, B. Ning, "Movable Antenna-Enhanced Near-Field Beamforming: Impact of Antenna Position Errors", to appear in *FCN*. <span style="color:red">(Student Best Paper Award)
 - {:.inline-badge} [10] ``IEEE PIMRC`` L. Lu, W. Mei\*, **X. Wei**, H. Hua, Z. Chen, and B. Ning, "Learning-Based Movable-Antenna Position Optimization with Implicit CSI", to appear in *IEEE PIMRC*.
