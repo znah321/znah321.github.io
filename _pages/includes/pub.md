@@ -2,7 +2,7 @@
 
 <hr style="border: 2px dashed #B22222;" />
 <h2 style="color: darkred;">🀄 Submitted Journals and Conference Papers:</h2>
-- Y Wang, W Mei, **X Wei**, Z Chen, B Ning, "Movable Antenna Empowered Near-Field Sensing via Antenna Position Optimization", submitted to *IEEE Transactions on Wireless Communications*. [[Available on arXiv]](https://arxiv.org/pdf/2512.00758)
+- Y. Wang, W. Mei\*, **X. Wei**, Z. Chen, B. Ning, "Movable Antenna Empowered Near-Field Sensing via Antenna Position Optimization", submitted to *IEEE Transactions on Wireless Communications*. [[Available on arXiv]](https://arxiv.org/pdf/2512.00758)
 - S. Yang, W. Mei\*, **X. Wei**, Z. Chen, B. Ning, "Near-Field Channel Estimation for Movable Antenna Systems via Bidirectional Movement," submitted to *Intelligent and Converged Networks*.
 - J. Wu, W. Mei\*, **X. Wei**, C. Liu, Z. Chen, and B. Ning, “Movable Antenna Position Optimization for Energy Efficient Secure Communications”, submitted to *IEEE ICC*.
 - **X. Wei**, W. Mei\*, X. Huang, Z. Chen, B. Ning, "Energy-Efficient Movable Antennas: Mechanical Power Modeling and Performance Optimization," submitted to *IEEE Transactions on Wireless Communications*. [[Available on arXiv]](https://arxiv.org/pdf/2509.24433) <span style="color:red">(First Author)</span>
