@@ -5,12 +5,11 @@
 - W. Mei\*, C. Liu, D. Wang, **X. Wei**, Y. Wu, Z. Chen, J. Fang, "Unlocking the Potential of Movable Antennas: General and Practical Antenna Position Optimization", submitted to *IEEE Wireless Communications*.
 - Y. Wang, W. Mei\*, **X. Wei**, Z. Chen, B. Ning, "Movable Antenna Empowered Near-Field Sensing via Antenna Position Optimization", submitted to *IEEE Transactions on Wireless Communications*. [[Available on arXiv]](https://arxiv.org/pdf/2512.00758)
 - S. Yang, W. Mei\*, **X. Wei**, Z. Chen, B. Ning, "Near-Field Channel Estimation for Movable Antenna Systems via Bidirectional Movement," submitted to *Intelligent and Converged Networks*.
-- J. Wu, W. Mei\*, **X. Wei**, C. Liu, Z. Chen, and B. Ning, “Movable Antenna Position Optimization for Energy Efficient Secure Communications”, submitted to *IEEE ICC*.
 - **X. Wei**, W. Mei\*, X. Huang, Z. Chen, B. Ning, "Energy-Efficient Movable Antennas: Mechanical Power Modeling and Performance Optimization," submitted to *IEEE Transactions on Wireless Communications*. [[Available on arXiv]](https://arxiv.org/pdf/2509.24433) <span style="color:red">(First Author)</span>
-- S. Yang, **X. Wei**, N. Su, W. Mei\*, Z. Chen, B. Ning, "Movable Antenna-Enhanced Near-Field Flexible Beamforming: Performance Analysis and Optimization," submitted to *IEEE Transactions on Vehicular Technology*.
 <hr style="border: 2px dashed #B22222;" />
 
 <h2 style="color: darkred;">📚 Published and Accepted Journal Papers：</h2>
+- {:.inline-badge} [8] ``IEEE TVT`` S. Yang, **X. Wei**, N. Su, W. Mei\*, Z. Chen, B. Ning, "Movable Antenna-Enhanced Near-Field Flexible Beamforming: Performance Analysis and Optimization," to appear in *IEEE Transactions on Vehicular Technology*.
 - {:.inline-badge} [7] ``IEEE WCM`` Q. Wu, Z. Zheng, Y. Gao, W. Mei, **X. Wei**, W. Chen, B. Ning, ["Integrating Movable Antennas and Intelligent Reflecting Surfaces (MA-IRS): Fundamentals, Practical Solutions, and Opportunities"](https://ieeexplore.ieee.org/document/11263864), *IEEE Wireless Commun.*, 2025, early access. [[Available on arXiv]](https://arxiv.org/abs/2506.14636)
 - {:.inline-badge} [6] ``IEEE TCOM`` **X. Wei**, W. Mei\*, Q. Wu, Q. Jia, B. Ning, Z. Chen, and J. Fang, ["Movable Antennas Meet Intelligent Reflecting Surface: Friends or Foes?"](https://ieeexplore.ieee.org/document/11079678), *IEEE Trans. Commun.*, vol. 73, no. 11, pp. 12756-12770, Nov. 2025. [[Available on arXiv]](https://arxiv.org/pdf/2501.15880) <span style="color:red">(First Author)</span>
 - {:.inline-badge} [5] ``IEEE WCL`` X. Shen, **X. Wei**, W. Mei\*, Z. Chen, J. Fang, B. Ning, ["Movable-Antenna-Enhanced Physical-Layer Service Integration: Performance Analysis and Optimization"](https://ieeexplore.ieee.org/document/11054044), *IEEE Wireless Commun. Lett.*, vol. 14, no. 9, pp. 2952-2956, Sept. 2025. [[Available on arXiv]](https://arxiv.org/pdf/2408.08322)
@@ -21,6 +20,7 @@
 <hr style="border: 2px dashed #B22222;" />
 
 <h2 style="color: darkred;">📚 Published and Accepted Conference Papers：</h2>
+- {:.inline-badge} [14] `IEEE ICC` J. Wu, W. Mei\*, **X. Wei**, C. Liu, Z. Chen, and B. Ning, “Movable Antenna Position Optimization for Energy Efficient Secure Communications”, to appear in *IEEE ICC*.
 - {:.inline-badge} [13] `IEEE GLOBECOM` R. Feng, W. Mei\*, L. Lu, **X. Wei**, Z. Chen, Z. Gao, B. Ning, "Performance Optimization for Movable Antenna Enhanced MISO-OFDM Systems", to appear in *IEEE Globecom Workshop*. [[Available on arXiv]](https://arxiv.org/pdf/2510.01789)
 - {:.inline-badge} [12] `IEEE GLOBECOM` **X. Wei**, W. Mei\*, X. Huang, Z. Chen, B. Ning, "Mechanical Power Modeling and Energy Efficiency Maximization for Movable Antenna Systems", to appear in *IEEE GlobeCom*. [[Available on arXiv]](https://arxiv.org/abs/2505.05914) <span style="color:red">(First Author)
 - {:.inline-badge} [11] ``FCN`` N. Su, W. Mei\*, **X. Wei**, Z. Chen, B. Ning, ["Movable Antenna-Enhanced Near-Field Beamforming: Impact of Antenna Position Errors"](https://ieeexplore.ieee.org/document/11296708), *Proc. Int. Conf. Future Commun. Netw. (FCN)*, Belgrade, Serbia, 2025, pp. 1-6. <span style="color:red">(Student Best Paper Award)
