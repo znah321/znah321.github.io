@@ -2,6 +2,7 @@
 
 <hr style="border: 2px dashed #B22222;" />
 <h2 style="color: darkred;">🀄 Submitted Journals and Conference Papers:</h2>
+- L. Cheng, W. Mei\*, J. Li, **X. Wei**, Z. Chen, B. Ning, "Wireless Power Transfer for Movement and Communications: Towards Self-Sustainable Movable Antennas", submitted to *IEEE ICC Workshop*.
 - W. Mei\*, C. Liu, D. Wang, **X. Wei**, Y. Wu, Z. Chen, J. Fang, "Unlocking the Potential of Movable Antennas: General and Practical Antenna Position Optimization", submitted to *IEEE Wireless Communications*.
 - Y. Wang, W. Mei\*, **X. Wei**, Z. Chen, B. Ning, "Movable Antenna Empowered Near-Field Sensing via Antenna Position Optimization", submitted to *IEEE Transactions on Wireless Communications*. [[Available on arXiv]](https://arxiv.org/pdf/2512.00758)
 - S. Yang, W. Mei\*, **X. Wei**, Z. Chen, B. Ning, "Near-Field Channel Estimation for Movable Antenna Systems via Bidirectional Movement," submitted to *Intelligent and Converged Networks*.
