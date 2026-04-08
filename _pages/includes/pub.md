@@ -10,7 +10,7 @@
 <hr style="border: 2px dashed #B22222;" />
 
 <h2 style="color: darkred;">📚 Published and Accepted Journal Papers：</h2>
-- {:.inline-badge} [8] ``ICN` S. Yang, W. Mei\*, **X. Wei**, Z. Chen, B. Ning, "Near-Field Channel Estimation for Movable Antenna Systems via Bidirectional Movement," accepted by *Intelligent and Converged Networks*.
+- {:.inline-badge} [9] ``ICN` S. Yang, W. Mei\*, **X. Wei**, Z. Chen, B. Ning, "Near-Field Channel Estimation for Movable Antenna Systems via Bidirectional Movement," accepted by *Intelligent and Converged Networks*.
 - {:.inline-badge} [8] ``IEEE TVT`` S. Yang, **X. Wei**, N. Su, W. Mei\*, Z. Chen, B. Ning, ["Movable Antenna-Enhanced Near-Field Flexible Beamforming: Performance Analysis and Optimization,"](https://ieeexplore.ieee.org/document/11364019), *IEEE Trans. Veh. Technol.*, 2026 early access. [[Available on arXiv]](https://arxiv.org/abs/2601.17825)
 - {:.inline-badge} [7] ``IEEE WCM`` Q. Wu, Z. Zheng, Y. Gao, W. Mei, **X. Wei**, W. Chen, B. Ning, ["Integrating Movable Antennas and Intelligent Reflecting Surfaces (MA-IRS): Fundamentals, Practical Solutions, and Opportunities"](https://ieeexplore.ieee.org/document/11263864), *IEEE Wireless Commun.*, vol. 33, no. 1, pp. 155-163, Feb. 2026. [[Available on arXiv]](https://arxiv.org/abs/2506.14636)
 - {:.inline-badge} [6] ``IEEE TCOM`` **X. Wei**, W. Mei\*, Q. Wu, Q. Jia, B. Ning, Z. Chen, and J. Fang, ["Movable Antennas Meet Intelligent Reflecting Surface: Friends or Foes?"](https://ieeexplore.ieee.org/document/11079678), *IEEE Trans. Commun.*, vol. 73, no. 11, pp. 12756-12770, Nov. 2025. [[Available on arXiv]](https://arxiv.org/pdf/2501.15880) <span style="color:red">(First Author)</span>
