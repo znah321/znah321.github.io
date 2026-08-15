@@ -2,6 +2,7 @@
 
 <hr style="border: 2px dashed #B22222;" />
 <h2 style="color: darkred;">🀄 Submitted Papers:</h2>
+- J. Wu, W. Mei\*, **X. Wei**, C. Liu, Z. Chen, and B. Ning, “Movable Antenna Enhanced Energy Efficient Secure Communications: Cross-Linked or Partial Movement?”, submitted to *IEEE Transactions on Wireless Communications*.
 - L. Lu, W. Mei\*, **X. Wei**, R. Feng, H. Hua, Z. Chen, B. Ning, and E. Björnson, "Deep Learning-Empowered Movable-Antenna Position Optimization with Partial CSI", submitted to *IEEE Transactions on Wireless Communications*. [[Available on arXiv]](https://arxiv.org/pdf/2606.17543)
 - Q. Jia, W. Mei\*, **X. Wei**, Z. Chen, and B. Ning, “Robust Movable Antenna Position Optimization under Imperfect Channel Path Parameters”, submitted to *ZTE Communications*.
 - **X. Wei**, W. Mei\*, H. Zhang, C. You, Z. Chen, B. Ning, "Movable Antenna Enhanced Near-Field Imaging," submitted to *IEEE GlobeCom Workshops*. <span style="color:red">(First Author)</span>
