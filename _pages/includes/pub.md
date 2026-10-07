@@ -4,14 +4,13 @@
 <h2 style="color: darkred;">🀄 Submitted Papers:</h2>
 - J. Wu, W. Mei\*, **X. Wei**, C. Liu, Z. Chen, and B. Ning, “Movable Antenna Enhanced Energy Efficient Secure Communications: Cross-Linked or Partial Movement?”, submitted to *IEEE Transactions on Wireless Communications*.
 - L. Lu, W. Mei\*, **X. Wei**, R. Feng, H. Hua, Z. Chen, B. Ning, and E. Björnson, "Deep Learning-Empowered Movable-Antenna Position Optimization with Partial CSI", submitted to *IEEE Transactions on Wireless Communications*. [[Available on arXiv]](https://arxiv.org/pdf/2606.17543)
-- Q. Jia, W. Mei\*, **X. Wei**, Z. Chen, and B. Ning, “Robust Movable Antenna Position Optimization under Imperfect Channel Path Parameters”, submitted to *ZTE Communications*.
-- **X. Wei**, W. Mei\*, H. Zhang, C. You, Z. Chen, B. Ning, "Movable Antenna Enhanced Near-Field Imaging," submitted to *IEEE GlobeCom Workshops*. <span style="color:red">(First Author)</span>
 - L. Cheng, W. Mei\*, J. Li, **X. Wei**, Z. Chen, B. Ning, "Wireless Power Transfer for Movement and Communications: Towards Self-Sustainable Movable Antennas", submitted to *IEEE GlobeCom*.
 - W. Mei\*, C. Liu, D. Wang, **X. Wei**, Y. Wu, Z. Chen, J. Fang, "Unlocking the Potential of Movable Antennas: General and Practical Antenna Position Optimization", submitted to *IEEE Wireless Communications*.
 - Y. Wang, W. Mei\*, **X. Wei**, Z. Chen, B. Ning, "Movable Antenna Empowered Near-Field Sensing via Antenna Position Optimization", submitted to *IEEE Transactions on Wireless Communications*. [[Available on arXiv]](https://arxiv.org/pdf/2512.00758)
 <hr style="border: 2px dashed #B22222;" />
 
 <h2 style="color: darkred;">📚 Journal Papers：</h2>
+- {:.inline-badge} [11] ``ZTE Commun`` Q. Jia, W. Mei\*, **X. Wei**, Z. Chen, and B. Ning, “Robust Movable Antenna Position Optimization under Imperfect Channel Path Parameters”, to appear in *ZTE Communications*.
 - {:.inline-badge} [10] ``IEEE TWC`` **X. Wei**, W. Mei\*, X. Huang, Z. Chen, B. Ning, ["Energy-Efficient Movable Antennas: Mechanical Power Modeling and Performance Optimization,"](https://ieeexplore.ieee.org/document/11503837) *IEEE Trans. Wireless Commun.*, vol. 25, pp. 16888-16902, 2026. [[Available on arXiv]](https://arxiv.org/pdf/2509.24433) <span style="color:red">(First Author)</span>
 - {:.inline-badge} [9] ``ICN`` S. Yang, W. Mei\*, **X. Wei**, Z. Chen, B. Ning, ["Near-Field Channel Estimation for Movable Antenna Systems via Bidirectional Movement,"](https://ieeexplore.ieee.org/document/11595143) *Intell. Converged Networks*, vol. 7, no. 2, pp. 183-193, Jun. 2026.
 - {:.inline-badge} [8] ``IEEE TVT`` S. Yang, **X. Wei**, N. Su, W. Mei\*, Z. Chen, B. Ning, ["Movable Antenna-Enhanced Near-Field Flexible Beamforming: Performance Analysis and Optimization,"](https://ieeexplore.ieee.org/document/11364019), *IEEE Trans. Veh. Technol.*, vol. 75, no. 7, pp. 13403-13418, July 2026. [[Available on arXiv]](https://arxiv.org/abs/2601.17825)
@@ -25,6 +24,7 @@
 <hr style="border: 2px dashed #B22222;" />
 
 <h2 style="color: darkred;">📚 Conference Papers：</h2>
+- {:.inline-badge} [15] `IEEE GLOBECOM` **X. Wei**, W. Mei\*, H. Zhang, C. You, Z. Chen, B. Ning, "Movable Antenna Enhanced Near-Field Imaging," to appear in *IEEE GlobeCom Workshops*. <span style="color:red">(First Author)</span>
 - {:.inline-badge} [14] `IEEE ICC` J. Wu, W. Mei\*, **X. Wei**, C. Liu, Z. Chen, and B. Ning, [“Movable Antenna Position Optimization for Energy Efficient Secure Communications”](https://ieeexplore.ieee.org/document/11586960), *Proc. IEEE Int. Conf. Commun. (ICC)*, Glasgow, United Kingdom, 2026, pp. 1-6.
 - {:.inline-badge} [13] `IEEE GLOBECOM` R. Feng, W. Mei\*, L. Lu, **X. Wei**, Z. Chen, Z. Gao, B. Ning, ["Performance Optimization for Movable Antenna Enhanced MISO-OFDM Systems"](https://ieeexplore.ieee.org/document/11591039), *Proc. IEEE Global Commun. Conf. Wkshops (GC Wkshps)*, Taipei, Taiwan, 2025, pp. 520-525. [[Available on arXiv]](https://arxiv.org/pdf/2510.01789)
 - {:.inline-badge} [12] `IEEE GLOBECOM` **X. Wei**, W. Mei\*, X. Huang, Z. Chen, B. Ning, ["Mechanical Power Modeling and Energy Efficiency Maximization for Movable Antenna Systems"](https://ieeexplore.ieee.org/document/11432508), *Proc. IEEE Global Commun. Conf. (GLOBECOM)*, Taipei, Taiwan, 2025, pp. 6117-6122. [[Available on arXiv]](https://arxiv.org/abs/2505.05914) <span style="color:red">(First Author)
