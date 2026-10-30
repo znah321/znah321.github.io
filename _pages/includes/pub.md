@@ -4,12 +4,12 @@
 <h2 style="color: darkred;">🀄 Submitted Papers:</h2>
 - J. Wu, W. Mei\*, **X. Wei**, C. Liu, Z. Chen, and B. Ning, “Movable Antenna Enhanced Energy Efficient Secure Communications: Cross-Linked or Partial Movement?”, submitted to *IEEE Transactions on Wireless Communications*.
 - L. Lu, W. Mei\*, **X. Wei**, R. Feng, H. Hua, Z. Chen, B. Ning, and E. Björnson, "Deep Learning-Empowered Movable-Antenna Position Optimization with Partial CSI", submitted to *IEEE Transactions on Wireless Communications*. [[Available on arXiv]](https://arxiv.org/pdf/2606.17543)
-- L. Cheng, W. Mei\*, J. Li, **X. Wei**, Z. Chen, B. Ning, "Wireless Power Transfer for Movement and Communications: Towards Self-Sustainable Movable Antennas", submitted to *IEEE GlobeCom*.
+- L. Cheng, W. Mei\*, J. Li, **X. Wei**, Z. Chen, B. Ning, "Wireless Power Transfer for Movement and Communications: Towards Self-Sustainable Movable Antennas", submitted to *Journal of Information and Intelligence*.
 - W. Mei\*, C. Liu, D. Wang, **X. Wei**, Y. Wu, Z. Chen, J. Fang, "Unlocking the Potential of Movable Antennas: General and Practical Antenna Position Optimization", submitted to *IEEE Wireless Communications*.
-- Y. Wang, W. Mei\*, **X. Wei**, Z. Chen, B. Ning, "Movable Antenna Empowered Near-Field Sensing via Antenna Position Optimization", submitted to *IEEE Transactions on Wireless Communications*. [[Available on arXiv]](https://arxiv.org/pdf/2512.00758)
 <hr style="border: 2px dashed #B22222;" />
 
 <h2 style="color: darkred;">📚 Journal Papers：</h2>
+- {:.inline-badge} [12] ``IEEE TWC`` Y. Wang, W. Mei\*, **X. Wei**, Z. Chen, B. Ning, ["Movable Antenna Empowered Near-Field Sensing via Antenna Position Optimization"](https://ieeexplore.ieee.org/document/11755624), to appear in *IEEE Transactions on Wireless Communications*. [[Available on arXiv]](https://arxiv.org/pdf/2512.00758)
 - {:.inline-badge} [11] ``ZTE Commun`` Q. Jia, W. Mei\*, **X. Wei**, Z. Chen, and B. Ning, “Robust Movable Antenna Position Optimization under Imperfect Channel Path Parameters”, to appear in *ZTE Communications*.
 - {:.inline-badge} [10] ``IEEE TWC`` **X. Wei**, W. Mei\*, X. Huang, Z. Chen, B. Ning, ["Energy-Efficient Movable Antennas: Mechanical Power Modeling and Performance Optimization,"](https://ieeexplore.ieee.org/document/11503837) *IEEE Trans. Wireless Commun.*, vol. 25, pp. 16888-16902, 2026. [[Available on arXiv]](https://arxiv.org/pdf/2509.24433) <span style="color:red">(First Author)</span>
 - {:.inline-badge} [9] ``ICN`` S. Yang, W. Mei\*, **X. Wei**, Z. Chen, B. Ning, ["Near-Field Channel Estimation for Movable Antenna Systems via Bidirectional Movement,"](https://ieeexplore.ieee.org/document/11595143) *Intell. Converged Networks*, vol. 7, no. 2, pp. 183-193, Jun. 2026.
